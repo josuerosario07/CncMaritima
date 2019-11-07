@@ -9,7 +9,12 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
-
+    <style>
+        #map {
+            height: 100%;
+            width: 100%;
+        }
+    </style>
     <title>Hello, world!</title>
 </head>
 
@@ -106,56 +111,17 @@
             </div>
         </div>
     </div>
-    <div class="map-section-home-dinamyc">
+    <div class="map-section-home-dinamyc" id="app">
         <div class="row">
             <div class="col-md-8">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15152.385097555682!2d-70.58911091994449!3d18.297204922515604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ebab05587691543%3A0xf2badb62c47eed96!2sPalmar%20de%20Ocoa%2071000!5e0!3m2!1ses-419!2sdo!4v1573067975565!5m2!1ses-419!2sdo"
-                    width="100%" height="923" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                <div id="map"></div>
             </div>
             <div class="col-md-4">
                 <ul>
-                    <li>
+                    <li class="port" v-for='port in ports' @click='showPortInMap(port)'>
                         <img src="assets/img/onpoint.svg" alt="">
-                        <p>Puerto De Haina</p>
+                        <p>{{port.name}}</p>
                     </li>
-                    <li>
-                        <img src="assets/img/onpoint.svg" alt="">
-                        <p>Puerto De Haina</p>
-                    </li>
-                    <li>
-                        <img src="assets/img/onpoint.svg" alt="">
-                        <p>Puerto De Haina</p>
-                    </li>
-                    <li>
-                        <img src="assets/img/onpoint.svg" alt="">
-                        <p>Puerto De Haina</p>
-                    </li>
-                    <li>
-                        <img src="assets/img/onpoint.svg" alt="">
-                        <p>Puerto De Haina</p>
-                    </li>
-                    <li>
-                        <img src="assets/img/onpoint.svg" alt="">
-                        <p>Puerto De Haina</p>
-                    </li>
-                    <li>
-                        <img src="assets/img/onpoint.svg" alt="">
-                        <p>Puerto De Haina</p>
-                    </li>
-                    <li>
-                        <img src="assets/img/onpoint.svg" alt="">
-                        <p>Puerto De Haina</p>
-                    </li>
-                    <li>
-                        <img src="assets/img/onpoint.svg" alt="">
-                        <p>Puerto De Haina</p>
-                    </li>
-                    <li>
-                        <img src="assets/img/onpoint.svg" alt="">
-                        <p>Puerto De Haina</p>
-                    </li>
-
                 </ul>
             </div>
         </div>
@@ -223,18 +189,101 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
+    <script src="./js/vue.js"></script>
+    <script>
+        var map;
+        function initMap() {
+            var rd = { lat: 18.483402, lng: -69.929611 };
+
+            map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 8,
+                center: rd
+            });
+
+        }
+        var app = new Vue({
+            el: '#app',
+            data: {
+                marker: null,
+                ports: [
+                    {
+                        name: 'Puerto Multimodal Caucedo',
+                        lat: 18.4289677,
+                        long: -69.6339226
+                    },
+                    {
+                        name: 'Puerto Río Haina',
+                        lat: 18.4255253,
+                        long: -70.0094895
+                    },
+                    {
+                        name: 'Puerto Santo Domingo',
+                        lat: 18.4688537,
+                        long: -69.8833913
+                    },
+                    {
+                        name: 'Puerto de San Pedro de Macorís',
+                        lat: 18.4453282, 
+                        long: -69.3097304
+                    },
+                    {
+                        name: 'Puerto de Puerto Plata',
+                        lat: 19.8000058,
+                        long: -70.6997479
+                    },
+                    {
+                        name: 'Puerto de Manzanillo',
+                        lat: 19.7027974,
+                        long: -71.7437126
+                    },
+                    {
+                        name: 'Puerto de La Romana',
+                        lat: 18.4164036,
+                        long: -68.9580576
+                    },
+                    {
+                        name: 'Puerto de Cabo Rojo',
+                        lat: 17.9258616,
+                        long: -71.6549272
+                    },
+                    {
+                        name: 'Puerto de Boca Chica',
+                        lat: 18.4414971,
+                        long: -69.6307683
+                    },
+                    {
+                        name: 'Puerto de Barahona',
+                        lat: 18.2075127,
+                        long: -71.0921883
+                    },
+                    {
+                        name: 'Puerto de Azua',
+                        lat: 18.3466994,
+                        long: -70.8363367
+                    }]
+            },
+            methods: {
+                showPortInMap (port) {
+                    if (this.marker)
+                        this.marker.setMap(null);
+                    this.marker = new google.maps.Marker({
+                        position: { lat: port.lat, lng: port.long },
+                        map: map,
+                        title: port.name,
+                        icon: './assets/img/onpoint.svg'
+                    });
+                    map.panTo(this.marker.getPosition());
+                    map.setZoom(12);
+                }
+            }
+        });
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyARrZ-dLxtBDe3-j7RsqGLs3F5_eLjSR_Y&callback=initMap" async defer></script>
 </body>
 
 </html>

@@ -173,5 +173,11 @@ body .info-mini {
   color: #808080;
   font-size: 12px;
 }
+.port {
+  cursor: pointer;
+}
+.port:hover {
+  color: #808080;
+}
 
 /*# sourceMappingURL=style.css.map */
