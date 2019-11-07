@@ -2,7 +2,7 @@ body {
   background: #F6F8F9;
 }
 body header {
-  min-height: 809px;
+  min-height: 640px;
   display: flex;
   position: relative;
 }
@@ -67,12 +67,16 @@ body header .carousel {
   top: 0;
 }
 body header .carousel .carousel-caption {
-  bottom: 250px;
+  bottom: 240px;
   text-align: left;
+}
+.slider-caption-arrow {
+  width: 30px;
+  margin-right: 10px;
 }
 body header .carousel .carousel-caption h1 {
   max-width: 600px;
-  font-size: 76px;
+  font-size: 61px;
   text-align: left;
 }
 body header .carousel .carousel-caption p {
@@ -89,7 +93,7 @@ body header .carousel-control-next:focus {
   background: #0056b3;
 }
 body .info-mini {
-  width: 70%;
+  width: 80%;
   min-height: 157px;
   border-top-right-radius: 70px;
   background: white;
