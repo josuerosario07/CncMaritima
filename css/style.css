@@ -1,18 +1,229 @@
-html {
-  height: 100%;
-  width: 100%;
+@font-face {
+  font-family: Metropolis-light;
+  src: url(/assets/fonts/Metropolis-Light.otf);
+}
+@font-face {
+  font-family: metropolis-black;
+  src: url(/assets/fonts/Metropolis-Black.otf);
+}
+@font-face {
+  font-family: metropolis-bold;
+  src: url(/assets/fonts/Metropolis-Bold.otf);
+}
+@font-face {
+  font-family: metropolis-exLight;
+  src: url(/assets/fonts/Metropolis-ExtraLight.otf);
+}
+@font-face {
+  font-family: metropolis-med;
+  src: url(/assets/fonts/Metropolis-Medium.otf);
+}
+@font-face {
+  font-family: nunito-Regular;
+  src: url(/assets/fonts/Nunito-Regular.ttf);
+}
+@font-face {
+  font-family: nunito-black;
+  src: url(/assets/fonts/Nunito-Black.ttf);
+}
+@font-face {
+  font-family: nunito-bold;
+  src: url(/assets/fonts/Nunito-Bold.ttf);
+}
+@font-face {
+  font-family: nunito-light;
+  src: url(/assets/fonts/Nunito-Light.ttf);
+}
+@font-face {
+  font-family: nunito-semiBold;
+  src: url(/assets/fonts/Nunito-SemiBold.ttf);
+}
+@font-face {
+  font-family: nunito-extraBold;
+  src: url(/assets/fonts/Nunito-ExtraBold.ttf);
 }
 html body {
-  width: 100%;
-  height: 100%;
+  background: #F6F8F9;
+  font-family: nunito-Regular;
+}
+html body .container {
+  max-width: 1640px !important;
 }
 html body header {
+  min-height: 809px;
+  position: relative;
+}
+html body header .navbar {
+  padding-top: 20px;
+  background: transparent;
+  max-height: 115px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+html body header .navbar .navbar-brand img {
+  width: 150px;
+}
+html body header .navbar ul {
+  margin-right: 80px;
+}
+html body header .navbar ul li {
+  margin: 0 20px;
+}
+html body header .navbar ul li a {
+  color: white !important;
+}
+html body header .cabecera-img {
   width: 100%;
   height: 100%;
-  background-image: url(/assets/img/slide01.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+html body header .jumbotron {
+  background: transparent;
+  position: absolute;
+  bottom: 110px;
+  color: #fff;
+}
+html body header .jumbotron h1 {
+  color: #fff;
+  font-family: metropolis-bold;
+  max-width: 763px;
+  font-size: 76px;
+  margin-bottom: 60px;
+}
+html body header .jumbotron a {
+  text-transform: uppercase;
+  font-family: nunito-Regular;
+  color: #fff !important;
+}
+html body header .jumbotron a img {
+  margin-right: 20px !important;
+}
+html body header .banner-header {
+  position: absolute;
+  background-color: #fff;
+  bottom: 0;
+  height: 157px;
+  min-width: 1465px;
+  border-top-right-radius: 120px;
+  display: flex;
+  flex-flow: row;
+  align-content: center;
+  align-items: center;
+  webkit-box-shadow: 0px 26px 41px -24px gray;
+  -moz-box-shadow: 0px 26px 41px -24px gray;
+  box-shadow: 0px 26px 41px -24px gray;
+  padding-right: 55px;
+}
+html body header .banner-header .items {
+  max-width: 992px;
+}
+html body header .banner-header .items .col-sm-2 {
+  padding: 0 !important;
+}
+html body header .banner-header .items h5 {
+  font-family: nunito-semiBold;
+  font-size: 16px;
+}
+html body header .banner-header .items p {
+  font-size: 13px;
+  color: #A8A8A8;
+}
+html body .content .top-content-location {
+  display: flex;
+  flex-flow: column;
+  flex-direction: column;
+  margin-top: 86px;
+  max-width: 844px;
+}
+html body .content .top-content-location .title {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+}
+html body .content .top-content-location .title h3 {
+  font-size: 30px;
+  font-family: nunito-bold;
+}
+html body .content .top-content-location .title img {
+  margin-right: 20px;
+}
+html body .content .top-content-location .title p {
+  margin-top: 10px;
+}
+html body .content .top-content-location .resume {
+  margin-top: 30px;
+}
+html body .content .maps-location {
+  min-height: 562px;
+  margin-top: 70px;
+  width: 100%;
+}
+html body .content .maps-location .row {
+  margin: 0;
+}
+html body .content .maps-location ul {
+  margin-top: 75px;
+}
+html body .content .maps-location ul li {
+  margin-bottom: 50px;
+  list-style-type: none;
+}
+html body .content .maps-location ul li .location {
+  display: flex;
+  flex-flow: row;
+}
+html body .content .maps-location ul li .location a {
+  text-decoration: none;
+}
+html body .content .maps-location ul li .location a .info h3 {
+  color: #95989A;
+  font-size: 25px;
+  font-family: nunito-Regular;
+}
+html body .content .maps-location ul li .location a .info p {
+  font-size: 20px;
+  color: #A8A8A8;
+  margin-top: -5px;
+}
+html body .content .maps-location ul li .location .active-location {
+  font-family: nunito-semiBold !important;
+  color: #004B8D !important;
+}
+html body .content .maps-location ul li .location img {
+  height: 100%;
+  margin-right: 20px;
+}
+html body .content .maps-location ul li .divider {
+  background: #95989A;
+  height: 1px;
+  width: 200px !important;
+  margin-left: 20px;
+}
+html body .docs-info {
+  margin-top: 160px;
+}
+html body .docs-info .content {
+  max-width: 398px !important;
+}
+html body .docs-info .top {
+  max-width: 375px !important;
+  height: 403px;
+  padding: 55px;
+  background: #d8d6d6;
+  border-radius: 30px;
+  -webkit-box-shadow: 0px 46px 72px 17px #d4d4d4;
+  -moz-box-shadow: 0px 46px 72px 17px #d4d4d4;
+  box-shadow: 0px 46px 72px 17px #d4d4d4;
+}
+html body .docs-info .top img {
+  width: 100%;
+  object-fit: cover;
 }
 
 /*# sourceMappingURL=style.css.map */
