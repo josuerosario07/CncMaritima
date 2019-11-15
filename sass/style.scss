@@ -3,7 +3,7 @@
 html {
     body {
         background: $bodyColor;
-        font-family: $nunitoregular;
+        font-family: $rr;
 
         .container {
             max-width: 1640px !important;
@@ -129,7 +129,7 @@ html {
 
                     h3 {
                         font-size: 30px;
-                        font-family: $nunitobold;
+                        font-family: $mbold;
                     }
 
                     img {
@@ -215,27 +215,151 @@ html {
         .docs-info {
             margin-top: 160px;
 
+            h2 {
+                margin-bottom: 90px;
+                font-family: $rb;
+            }
+
             .content {
                 max-width: 398px !important;
+                margin-top: 90px;
 
+                .top {
+                    // max-width: 375px !important;
+                    height: 403px;
+                    padding: 55px;
+                    background: $graylighter;
+                    border-radius: 30px;
+                    -webkit-box-shadow: 0px 29px 11px 17px #d4d4d4;
+                    -moz-box-shadow: 0px 29px 11px 17px #d4d4d4;
+                    box-shadow: 0px 29px 11px 17px #d4d4d4;
+
+
+                    img {
+                        width: 100%;
+                        object-fit: cover;
+
+                    }
+                }
+
+                p {
+                    font-family: $rm;
+                    font-size: 27px;
+                    margin-top: 98px;
+                }
+
+                .btn {
+                    width: 375px;
+                    min-height: 75px;
+                    margin-top: 50px;
+                    font-size: 18px;
+                    font-family: $rb;
+                    background: $bluenav;
+                    border-radius: 35px;
+                    text-transform: uppercase;
+                }
 
             }
 
-            .top {
-                max-width: 375px !important;
-                height: 403px;
-                padding: 55px;
-                background: $graylighter;
+
+        }
+
+        .opinions {
+            min-height: 370px;
+            background-image: url(/assets/img/banner-form.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            display: flex;
+            flex-flow: column;
+            flex-direction: row;
+            align-items: center;
+
+            margin-top: 155px;
+
+            h1 {
+                color: white;
+                margin-top: 60px;
+            }
+
+            textarea {
+                border-radius: 20px;
+                min-height: 176px !important;
+            }
+
+            .btn {
+                margin-top: 80px;
+                width: 179px;
+                height: 58px;
                 border-radius: 30px;
-                -webkit-box-shadow: 0px 46px 72px 17px rgba(212, 212, 212, 1);
-                -moz-box-shadow: 0px 46px 72px 17px rgba(212, 212, 212, 1);
-                box-shadow: 0px 46px 72px 17px rgba(212, 212, 212, 1);
+                background: $bluenav;
+                font-size: 18px;
+                border: none;
+                text-transform: uppercase;
+            }
+        }
+
+        footer {
+            padding: 68px;
+            min-height: 417px;
+
+            .father-content-footer {
+                display: flex;
+                flex-direction: row;
+                flex-flow: row;
+                flex: 1 1 auto;
+                justify-content: space-between;
+
+                .item-logo {
+                    .content {
+                        max-width: 387px;
+
+                        p {
+                            font-family: $rl;
+                            color: $grayP;
+                            font-size: 12px;
+                        }
+                    }
+                }
+
+                .links {
+                    display: flex;
+                    flex-direction: column;
+                    flex-flow: column;
+                    min-width: 1100px;
+
+                    .title {
+                        h4 {
+                            margin-bottom: 30px;
+                        }
+                    }
+
+                    .direct-links {
+                        display: flex;
+                        flex-flow: row;
+                        flex-direction: row;
+                        justify-content: space-between;
 
 
-                img {
-                    width: 100%;
-                    object-fit: cover;
 
+                        .item-link {
+                            ul {
+                                padding-left: 0;
+
+                                li {
+                                    font-family: $rm;
+                                    list-style-type: none;
+                                    margin-bottom: 10px;
+
+                                    a {
+                                        color: black;
+                                        text-transform: capitalize !important;
+
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }

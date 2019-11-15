@@ -42,9 +42,29 @@
   font-family: nunito-extraBold;
   src: url(/assets/fonts/Nunito-ExtraBold.ttf);
 }
+@font-face {
+  font-family: Raleway-Light;
+  src: url(/assets/fonts/Raleway-Light.ttf);
+}
+@font-face {
+  font-family: Raleway-med;
+  src: url(/assets/fonts/Raleway-Medium.ttf);
+}
+@font-face {
+  font-family: Raleway-bold;
+  src: url(/assets/fonts/Raleway-Bold.ttf);
+}
+@font-face {
+  font-family: Raleway-exBold;
+  src: url(/assets/fonts/Raleway-ExtraBold.ttf);
+}
+@font-face {
+  font-family: Raleway-regular;
+  src: url(/assets/fonts/Raleway-Regular.ttf);
+}
 html body {
   background: #F6F8F9;
-  font-family: nunito-Regular;
+  font-family: Raleway-regular;
 }
 html body .container {
   max-width: 1640px !important;
@@ -148,7 +168,7 @@ html body .content .top-content-location .title {
 }
 html body .content .top-content-location .title h3 {
   font-size: 30px;
-  font-family: nunito-bold;
+  font-family: metropolis-bold;
 }
 html body .content .top-content-location .title img {
   margin-right: 20px;
@@ -208,22 +228,117 @@ html body .content .maps-location ul li .divider {
 html body .docs-info {
   margin-top: 160px;
 }
+html body .docs-info h2 {
+  margin-bottom: 90px;
+  font-family: Raleway-bold;
+}
 html body .docs-info .content {
   max-width: 398px !important;
+  margin-top: 90px;
 }
-html body .docs-info .top {
-  max-width: 375px !important;
+html body .docs-info .content .top {
   height: 403px;
   padding: 55px;
   background: #d8d6d6;
   border-radius: 30px;
-  -webkit-box-shadow: 0px 46px 72px 17px #d4d4d4;
-  -moz-box-shadow: 0px 46px 72px 17px #d4d4d4;
-  box-shadow: 0px 46px 72px 17px #d4d4d4;
+  -webkit-box-shadow: 0px 29px 11px 17px #d4d4d4;
+  -moz-box-shadow: 0px 29px 11px 17px #d4d4d4;
+  box-shadow: 0px 29px 11px 17px #d4d4d4;
 }
-html body .docs-info .top img {
+html body .docs-info .content .top img {
   width: 100%;
   object-fit: cover;
+}
+html body .docs-info .content p {
+  font-family: Raleway-med;
+  font-size: 27px;
+  margin-top: 98px;
+}
+html body .docs-info .content .btn {
+  width: 375px;
+  min-height: 75px;
+  margin-top: 50px;
+  font-size: 18px;
+  font-family: Raleway-bold;
+  background: #004B8D;
+  border-radius: 35px;
+  text-transform: uppercase;
+}
+html body .opinions {
+  min-height: 370px;
+  background-image: url(/assets/img/banner-form.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-flow: column;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 155px;
+}
+html body .opinions h1 {
+  color: white;
+  margin-top: 60px;
+}
+html body .opinions textarea {
+  border-radius: 20px;
+  min-height: 176px !important;
+}
+html body .opinions .btn {
+  margin-top: 80px;
+  width: 179px;
+  height: 58px;
+  border-radius: 30px;
+  background: #004B8D;
+  font-size: 18px;
+  border: none;
+  text-transform: uppercase;
+}
+html body footer {
+  padding: 68px;
+  min-height: 417px;
+}
+html body footer .father-content-footer {
+  display: flex;
+  flex-direction: row;
+  flex-flow: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+}
+html body footer .father-content-footer .item-logo .content {
+  max-width: 387px;
+}
+html body footer .father-content-footer .item-logo .content p {
+  font-family: Raleway-Light;
+  color: #A8A8A8;
+  font-size: 12px;
+}
+html body footer .father-content-footer .links {
+  display: flex;
+  flex-direction: column;
+  flex-flow: column;
+  min-width: 1100px;
+}
+html body footer .father-content-footer .links .title h4 {
+  margin-bottom: 30px;
+}
+html body footer .father-content-footer .links .direct-links {
+  display: flex;
+  flex-flow: row;
+  flex-direction: row;
+  justify-content: space-between;
+}
+html body footer .father-content-footer .links .direct-links .item-link ul {
+  padding-left: 0;
+}
+html body footer .father-content-footer .links .direct-links .item-link ul li {
+  font-family: Raleway-med;
+  list-style-type: none;
+  margin-bottom: 10px;
+}
+html body footer .father-content-footer .links .direct-links .item-link ul li a {
+  color: black;
+  text-transform: capitalize !important;
 }
 
 /*# sourceMappingURL=style.css.map */

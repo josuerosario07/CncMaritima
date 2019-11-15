@@ -42,5 +42,25 @@
   font-family: nunito-extraBold;
   src: url(/assets/fonts/Nunito-ExtraBold.ttf);
 }
+@font-face {
+  font-family: Raleway-Light;
+  src: url(/assets/fonts/Raleway-Light.ttf);
+}
+@font-face {
+  font-family: Raleway-med;
+  src: url(/assets/fonts/Raleway-Medium.ttf);
+}
+@font-face {
+  font-family: Raleway-bold;
+  src: url(/assets/fonts/Raleway-Bold.ttf);
+}
+@font-face {
+  font-family: Raleway-exBold;
+  src: url(/assets/fonts/Raleway-ExtraBold.ttf);
+}
+@font-face {
+  font-family: Raleway-regular;
+  src: url(/assets/fonts/Raleway-Regular.ttf);
+}
 
 /*# sourceMappingURL=variables.css.map */
