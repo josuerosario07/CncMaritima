@@ -302,6 +302,7 @@ html {
         footer {
             padding: 68px;
             min-height: 417px;
+            padding-bottom: 0;
 
             .father-content-footer {
                 display: flex;
@@ -329,8 +330,16 @@ html {
                     min-width: 1100px;
 
                     .title {
+
+
                         h4 {
                             margin-bottom: 30px;
+                            color: black;
+                            font-size: 20px;
+                            font-family: $nunitobold;
+                            border-bottom: solid 1px $graylighter;
+                            padding-bottom: 10px;
+
                         }
                     }
 
@@ -343,16 +352,18 @@ html {
 
 
                         .item-link {
+                            max-width: 320px;
+
                             ul {
                                 padding-left: 0;
 
                                 li {
                                     font-family: $rm;
                                     list-style-type: none;
-                                    margin-bottom: 10px;
+                                    margin-bottom: 20px;
 
                                     a {
-                                        color: black;
+                                        color: $graymed;
                                         text-transform: capitalize !important;
 
                                     }
@@ -360,6 +371,18 @@ html {
                             }
                         }
                     }
+                }
+            }
+
+            .copy {
+                margin-top: 80px;
+                border-top: solid 1px $graylighter;
+                padding: 15px;
+
+                h4 {
+                    font-size: 14px;
+                    color: $graymed;
+                    font-family: $rl
                 }
             }
         }
