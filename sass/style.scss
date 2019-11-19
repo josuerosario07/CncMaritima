@@ -167,17 +167,29 @@ html {
                             flex-flow: row;
 
 
-                            a {
+                            div {
                                 text-decoration: none;
+                                cursor: pointer;
 
                                 .info {
-
+                                    transition: 0.5s all ease-in-out;
 
 
                                     h3 {
                                         color: $bordeColor;
                                         font-size: 25px;
                                         font-family: $nunitoregular;
+                                        // transition: 0.5s all ease-in-out;
+
+                                        img {
+                                            opacity: 0;
+                                            transition: 0s;
+                                            position: absolute;
+                                            width: 20px;
+                                            // transition: 0.5s all ease-in-out;
+                                        }
+
+
                                     }
 
                                     p {
@@ -185,19 +197,33 @@ html {
                                         color: $grayP;
                                         margin-top: -5px;
                                     }
+
+                                    &:hover {
+                                        h3 {
+                                            color: $bluenav !important;
+                                        }
+                                    }
                                 }
 
 
                             }
 
-                            .active-location {
-                                font-family: $nunitosemiBold !important;
-                                color: $bluenav !important;
-                            }
 
                             img {
                                 height: 100%;
                                 margin-right: 20px;
+                            }
+                        }
+
+
+                        .active-indicator {
+                            font-family: $nunitosemiBold !important;
+                            color: $bluenav !important;
+
+                            img {
+                                opacity: 1 !important;
+                                transition: 0.5s all ease-in-out;
+                                position: relative !important;
                             }
                         }
 
@@ -303,6 +329,7 @@ html {
             padding: 68px;
             min-height: 417px;
             padding-bottom: 0;
+            background: $white;
 
             .father-content-footer {
                 display: flex;
@@ -365,6 +392,12 @@ html {
                                     a {
                                         color: $graymed;
                                         text-transform: capitalize !important;
+                                        text-decoration: none;
+
+                                        &:hover {
+                                            color: $bluenav;
+                                            transition: 0.2s;
+                                        }
 
                                     }
                                 }
@@ -383,6 +416,182 @@ html {
                     font-size: 14px;
                     color: $graymed;
                     font-family: $rl
+                }
+            }
+        }
+
+        .tabs {
+            width: 100%;
+
+            ul {
+
+                justify-content: space-between;
+                max-width: 1100px;
+                margin: 0 auto;
+                // padding-left: 20px;
+                // padding-right: 20px;
+                // padding-top: 30px;
+                padding: 30px 30px 0px 30px;
+                margin-top: -50px;
+                background: white;
+                position: relative;
+                -webkit-box-shadow: 2px 13px 25px -13px rgba(122, 122, 122, 1);
+                -moz-box-shadow: 2px 13px 25px -13px rgba(122, 122, 122, 1);
+                box-shadow: 2px 13px 25px -13px rgba(122, 122, 122, 1);
+
+                li {
+                    display: flex;
+                    flex-flow: row;
+                    align-items: flex-start;
+                    max-width: 300px;
+                    // margin-right: 100px;
+                    font-size: 16px;
+                    // justify-content: center;
+
+                    .father {
+                        display: flex;
+                        flex-flow: row;
+                        align-items: flex-start;
+                    }
+
+
+                    a {
+                        color: black;
+                        margin-left: 15px;
+                        padding-bottom: 30px;
+                        width: 100%;
+
+
+                        &::after {
+                            content: '';
+                            display: block;
+                            width: 0;
+                            height: 3px;
+                            background: $borderGreen;
+                            transition: width .3s;
+                            margin-top: 20px;
+                        }
+                    }
+
+                    span {
+                        font-size: 13px;
+                        color: $grayP;
+                    }
+
+                    .active {
+                        background: transparent !important;
+                        color: unset !important;
+
+                        &::after {
+                            width: 100%;
+                        }
+
+                    }
+                }
+            }
+        }
+
+        .route-traffic {
+            margin-top: 110px;
+
+            .container {
+                max-width: 90% !important;
+
+                h1 {
+                    font-family: $rb;
+                    color: $bluenav;
+                    font-size: 45px;
+                }
+
+                .tag-recent {
+                    margin-top: 60px;
+                    display: flex;
+                    flex-flow: row;
+
+                    h5 {
+                        font-size: 20px;
+                        color: $graymed;
+                    }
+
+                    ul {
+                        padding-left: 10px;
+
+                        li {
+                            list-style-type: none;
+                            display: inline-block;
+                            margin-left: 10px;
+
+                            span {
+                                font-size: 14px;
+                                color: white;
+                                background: $orange;
+                                padding: 3px 10px;
+                                margin-left: 0x;
+                            }
+                        }
+
+                    }
+
+
+                }
+
+                .item-result {
+                    margin-top: 20px;
+
+                    h3 {
+                        font-family: $rb;
+                        font-size: 29px;
+
+                    }
+
+                    h5 {
+                        font-family: $rl;
+                        color: $grayP;
+                        font-size: 20px;
+                    }
+                }
+
+                .map-result {
+                    margin-top: 40px;
+                }
+
+                .routes {
+                    margin-top: 110px;
+
+                    .table {
+                        border-collapse: separate;
+                        border-spacing: 0 13px;
+
+                        tbody {
+                            tr {
+                                height: 153px;
+                                margin-bottom: 25px;
+                                border: none;
+                                background: white;
+
+
+                                th,
+                                td {
+                                    padding-top: 55px;
+                                    // border: none;
+                                }
+
+                                th {
+                                    border-left: solid 10px $borderGreen !important;
+                                }
+                            }
+
+
+                        }
+                    }
+
+                    .table-striped tbody tr:nth-of-type(odd) {
+                        background-color: rgba(0, 0, 0, .05);
+
+                        th {
+                            border-left: none !important;
+                        }
+                    }
                 }
             }
         }

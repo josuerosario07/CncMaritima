@@ -31,7 +31,7 @@
                             <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="itinerario.html">Itinerario</a>
+                            <a class="nav-link" href="#">Itinerario</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link " href="#" tabindex="-1" aria-disabled="true">
@@ -46,8 +46,7 @@
         <img class="cabecera-img" src="assets/img/slide01.jpg" alt="">
         <div class="container">
             <div class="jumbotron">
-                <h1 class="display-4">Exporta e Importa
-                    tus mercancias</h1>
+                <h1 class="display-4">Itinerario Buques y Puertos</h1>
                 <a href="#" class="lead"><img src="/assets/img/arrow-button.svg" alt=""> Mira nuestro itinerario</a>
             </div>
         </div>
@@ -120,167 +119,115 @@
             </a>
         </div> -->
     </header>
-
-    <div class="content">
+    <section class="tabs">
         <div class="container">
-            <div class="top-content-location">
-                <div class="title"><img src="assets/img/location.svg" alt="">
-                    <h3>Puertos en Republica Dominicana</h3>
-                </div>
-                <div class="resume">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum aperiam iste tenetur ea quis
-                        reiciendis quos nobis esse optio! Ad similique temporibus explicabo officiis corrupti, quisquam
-                        perferendis debitis possimus libero?</p>
-                </div>
-            </div>
-            <div class="maps-location">
-                <div class="row">
-                    <div class="col-sm-9">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10496.144941794679!2d-69.63552623333784!3d18.424821311711487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ea58079fb02d579%3A0x5ff288c557577248!2sDP%20World%20Caucedo!5e0!3m2!1ses-419!2sdo!4v1573759680325!5m2!1ses-419!2sdo"
-                            width="100%" height="560px" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-                    </div>
-                    <div class="col-sm-3">
-                        <ul>
-                            <li>
-                                <div class="location">
-                                    <img src="assets/img/ac-ico.svg" alt="">
-                                    <div>
-                                        <div class="info">
-                                            <h3 id="" class="indicator"><img src="assets/img/arrow-lnk.svg" alt="">
-                                                Puerto de
-                                                Haina</h3>
-                                            <p>Ver detalles</p>
-                                        </div>
-                                        <div class="divider"></div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="location">
-                                    <img src="assets/img/ac-ico.svg" alt="">
-                                    <div>
-                                        <div class="info">
-                                            <h3 id="" class="indicator"><img src="assets/img/arrow-lnk.svg" alt="">
-                                                Puerto de
-                                                Haina</h3>
-                                            <p>Ver detalles</p>
-                                        </div>
-                                        <div class="divider"></div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="location">
-                                    <img src="assets/img/ac-ico.svg" alt="">
-                                    <div>
-                                        <div class="info">
-                                            <h3 id="" class="indicator"><img src="assets/img/arrow-lnk.svg" alt="">
-                                                Puerto de
-                                                Haina</h3>
-                                            <p>Ver detalles</p>
-                                        </div>
-                                        <div class="divider"></div>
-                                    </div>
-                                </div>
-                            </li>
+            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                <li class="nav-item">
+                    <img src="assets/img/country-ico.svg" alt=""> <a class="nav-link active" id="pills-home-tab"
+                        data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home"
+                        aria-selected="true">Pais<br>
+                        <span>Escalas y Puertos</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <img src="assets/img/smile-cio.svg" alt=""> <a class="nav-link" id="pills-profile-tab"
+                        data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile"
+                        aria-selected="false">Puerto <br>
+                        <span>Puertos disponibles</span></a>
+                </li>
+                <li class="nav-item">
+                    <img src="assets/img/ac-ico.svg" alt=""> <a class="nav-link" id="pills-contact-tab"
+                        data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact"
+                        aria-selected="false">Linea <br>
+                        <span>Lineas operadoras en todo el pais</span></a>
+                </li>
 
-
-                        </ul>
-                    </div>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                    ...</div>
+                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...
                 </div>
-            </div>
-
-        </div>
-
-    </div>
-
-    <div class="docs-info">
-        <div class="container">
-            <h2>Información de referencia</h2>
-            <div class="row justify-content-center">
-                <div class="col-sm-4 mx-auto">
-                    <div class="content mx-auto">
-                        <div class="top">
-                            <img src="assets/img/dominican-flag.svg" alt="">
-                        </div>
-                        <p>Republica Dominicana Socio Comercial</p>
-                        <button class="btn btn-primary"> Descargar Documento</button>
-                    </div>
-                </div>
-                <div class="col-sm-4 mx-auto">
-                    <div class="content mx-auto">
-                        <div class="top">
-                            <img src="assets/img/china.svg" alt="">
-                        </div>
-                        <p>Republica Dominicana Socio Comercial</p>
-                        <button class="btn btn-primary"> Descargar Documento</button>
-                    </div>
-                </div>
-                <div class="col-sm-4 mx-auto">
-                    <div class="content mx-auto">
-                        <div class="top">
-                            <img src="assets/img/buque-doc.svg" alt="">
-                        </div>
-                        <p>Republica Dominicana Socio Comercial</p>
-                        <button class="btn btn-primary"> Descargar Documento</button>
-                    </div>
-                </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-sm-4 mx-auto">
-                    <div class="content mx-auto">
-                        <div class="top">
-                            <img src="assets/img/dominican-flag.svg" alt="">
-                        </div>
-                        <p>Republica Dominicana Socio Comercial</p>
-                        <button class="btn btn-primary"> Descargar Documento</button>
-                    </div>
-                </div>
-                <div class="col-sm-4 mx-auto">
-                    <div class="content mx-auto">
-                        <div class="top">
-                            <img src="assets/img/china.svg" alt="">
-                        </div>
-                        <p>Republica Dominicana Socio Comercial</p>
-                        <button class="btn btn-primary"> Descargar Documento</button>
-                    </div>
-                </div>
-                <div class="col-sm-4 mx-auto">
-                    <div class="content mx-auto">
-                        <div class="top">
-                            <img src="assets/img/buque-doc.svg" alt="">
-                        </div>
-                        <p>Republica Dominicana Socio Comercial</p>
-                        <button class="btn btn-primary"> Descargar Documento</button>
-                    </div>
+                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...
                 </div>
             </div>
         </div>
-    </div>
 
-    <div class="opinions">
+    </section>
+    <div class="route-traffic">
         <div class="container">
-            <div class="content">
-                <div class="row">
-                    <div class="col-sm-6 col-md-6 ">
-                        <h1>Queremos conocer tu opinión<br>
-                            ¡ESCRIBENOS!</h1>
-                    </div>
-                    <div class="col-sm-6 col-md-4 ">
-                        <form>
-                            <div class="form-group">
-                                <label for="exampleFormControlTextarea1">Example textarea</label>
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                            </div>
+            <h1>Selecciona tu ruta</h1>
+            <div class="tag-recent">
+                <h5>Busquedas Recientes:</h5>
+                <ul>
+                    <li><span>Haina REp Dom</span></li>
+                    <li><span>Haina REp Dom</span></li>
+                    <li><span>Haina REp Dom</span></li>
+                </ul>
+            </div>
+            <div class="item-result">
+                <h3>Rutas de exportacion:</h3>
+                <h5>Estas son als rutas conforme a tu solicitud de busqueda</h5>
+            </div>
+            <div class="map-result">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d967643.6569048542!2d-70.69186089043707!3d18.67036549744392!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eaf8838def1b6f5%3A0xa6020f24060df7e0!2sRep%C3%BAblica%20Dominicana!5e0!3m2!1ses-419!2sdo!4v1574178037842!5m2!1ses-419!2sdo"
+                    width="100%" height="694" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            </div>
 
-
-                        </form>
-                    </div>
-                    <div class="col-sm-6 col-md-2 ">
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                    </div>
-                </div>
+            <div class="routes">
+                <table class="table table-striped">
+                    <!-- <thead>
+                        <tr>
+                            <th scope="col">Origen<br><span>Puerto de Caucedo</span> </th>
+                            <th scope="col">First</th>
+                            <th scope="col">Last</th>
+                            <th scope="col">Handle</th>
+                        </tr>
+                    </thead> -->
+                    <tbody class="text-center">
+                        <tr>
+                            <th scope="row">Origen<br><span>Puerto de Caucedo</span> </th>
+                            <td>Destino<br><span>Puerto de Haina</span></td>
+                            <td>Duracion<br><span>36 Semanas</span></td>
+                            <td>Frecuencia<br><span>Lunes de cada mes</span></td>
+                            <td>Tipo de Carga<br><span>truckload</span></td>
+                            <td>Agente Representante<br><span>Marítima Dominicana</span></td>
+                            <td>Tipo de contenedor<br><span>Refrigerado</span></td>
+                            <td><Button class="btn btn-primary">Seleccionar</Button></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Origen<br><span>Puerto de Caucedo</span> </th>
+                            <td>Destino<br><span>Puerto de Haina</span></td>
+                            <td>Duracion<br><span>36 Semanas</span></td>
+                            <td>Frecuencia<br><span>Lunes de cada mes</span></td>
+                            <td>Tipo de Carga<br><span>truckload</span></td>
+                            <td>Agente Representante<br><span>Marítima Dominicana</span></td>
+                            <td>Tipo de contenedor<br><span>Refrigerado</span></td>
+                            <td><Button class="btn btn-primary">Seleccionar</Button></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Origen<br><span>Puerto de Caucedo</span> </th>
+                            <td>Destino<br><span>Puerto de Haina</span></td>
+                            <td>Duracion<br><span>36 Semanas</span></td>
+                            <td>Frecuencia<br><span>Lunes de cada mes</span></td>
+                            <td>Tipo de Carga<br><span>truckload</span></td>
+                            <td>Agente Representante<br><span>Marítima Dominicana</span></td>
+                            <td>Tipo de contenedor<br><span>Refrigerado</span></td>
+                            <td><Button class="btn btn-primary">Seleccionar</Button></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Origen<br><span>Puerto de Caucedo</span> </th>
+                            <td>Destino<br><span>Puerto de Haina</span></td>
+                            <td>Duracion<br><span>36 Semanas</span></td>
+                            <td>Frecuencia<br><span>Lunes de cada mes</span></td>
+                            <td>Tipo de Carga<br><span>truckload</span></td>
+                            <td>Agente Representante<br><span>Marítima Dominicana</span></td>
+                            <td>Tipo de contenedor<br><span>Refrigerado</span></td>
+                            <td><Button class="btn btn-primary">Seleccionar</Button></td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>
