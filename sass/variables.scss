@@ -26,3 +26,36 @@ $graylighter: rgb(216, 214, 214);
 $graymed: #676767;
 $borderGreen: #06C37A;
 $orange:#E67D22;
+
+
+/*font Variables*/
+$roboto: 'Roboto',
+sans-serif;
+/*Color Variables*/
+$bc: #5cb85c;
+$heding: #405867;
+$pfont: #5f6771;
+
+// Mixins
+@mixin transition($property: all, $duration: 300ms, $animate: linear, $delay:0s) {
+    transition: $property $duration $animate $delay;
+}
+
+// Placeholder Mixins
+@mixin placeholder {
+    &.placeholder {
+        @content;
+    }
+
+    &:-moz-placeholder {
+        @content;
+    }
+
+    &::-moz-placeholder {
+        @content;
+    }
+
+    &::-webkit-input-placeholder {
+    @content;
+}
+}
