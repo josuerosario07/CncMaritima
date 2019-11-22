@@ -251,19 +251,16 @@ html {
                 margin-top: 90px;
 
                 .top {
-                    // max-width: 375px !important;
                     height: 403px;
-                    padding: 55px;
-                    background: $graylighter;
                     border-radius: 30px;
-                    -webkit-box-shadow: 0px 29px 11px 17px #d4d4d4;
-                    -moz-box-shadow: 0px 29px 11px 17px #d4d4d4;
-                    box-shadow: 0px 29px 11px 17px #d4d4d4;
+                    -webkit-box-shadow: 3px 13px 18px 0px rgba(0, 0, 0, 0.22);
+                    -moz-box-shadow: 3px 13px 18px 0px rgba(0, 0, 0, 0.22);
+                    box-shadow: 3px 13px 18px 0px rgba(0, 0, 0, 0.22);
 
 
                     img {
                         width: 100%;
-                        object-fit: cover;
+
 
                     }
                 }
@@ -1101,6 +1098,64 @@ html {
                             width: 100%;
                         }
 
+                    }
+                }
+            }
+
+            .tab-content {
+                margin-top: 100px;
+
+                .title {
+                    h1 {
+                        font-family: $rb;
+                        color: $bluenav;
+                    }
+
+                    p {
+                        max-width: 800px;
+                    }
+                }
+
+                .item-card {
+                    width: 100%;
+                    background: white;
+                    padding: 23px;
+                    margin-top: 100px;
+                    -webkit-box-shadow: 3px 13px 18px 0px rgba(0, 0, 0, 0.22);
+                    -moz-box-shadow: 3px 13px 18px 0px rgba(0, 0, 0, 0.22);
+                    box-shadow: 3px 13px 18px 0px rgba(0, 0, 0, 0.22);
+
+                    .header-card {
+                        display: flex;
+                        flex-flow: row;
+                        flex-direction: row;
+                        margin-bottom: 20px;
+
+                        img {
+                            width: 80px;
+                            height: 80px;
+                        }
+
+                        h3 {
+                            font-size: 20px;
+                            color: $rednav;
+                            font-family: $rb;
+                            max-width: 200px;
+                            margin-left: 20px;
+                        }
+                    }
+
+                    .contact-card {
+                        margin-top: 64px;
+
+                        a {
+                            margin-right: 20px;
+                            font-size: 16px;
+
+                            img {
+                                margin-right: 10px;
+                            }
+                        }
                     }
                 }
             }
