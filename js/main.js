@@ -2,20 +2,20 @@ $(window).scroll(function () {
     var scroll = $(window).scrollTop();
 
     if (scroll >= 200) {
-        $(".transp-nav").addClass("new-nav");
+        $(".navbar").addClass("new-nav");
     } else {
-        $(".transp-nav").removeClass("new-nav");
+        $(".navbar").removeClass("new-nav");
     }
 });
 
 
 
 
-// $(document).ready(function () {
-//     $('.indicator').click(function () {
-//         $(this).toggleClass('active-indicator');
-//         $(this).siblings().removeClass('active-indicator');
 
-//     });
+$(document).ready(function () {
+    $('.indicator').click(function () {
+        $(this).toggleClass('active-indicator');
+        $(this).siblings().removeClass('active-indicator');
 
-
+    });
+});

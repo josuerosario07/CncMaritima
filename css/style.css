@@ -75,6 +75,7 @@ html body header {
   position: relative;
 }
 html body header .navbar {
+  transition: 0.3s ease-in-out;
   padding-top: 20px;
   background: transparent;
   max-height: 115px;
@@ -83,8 +84,19 @@ html body header .navbar {
   width: 100%;
   z-index: 2;
 }
+html body header .navbar .navbar-brand {
+  position: relative;
+}
 html body header .navbar .navbar-brand img {
   width: 150px;
+  top: 0;
+  left: 0;
+}
+html body header .navbar .logo-white {
+  display: block;
+}
+html body header .navbar .logo-color {
+  opacity: 0;
 }
 html body header .navbar ul {
   margin-right: 80px;
@@ -94,6 +106,25 @@ html body header .navbar ul li {
 }
 html body header .navbar ul li a {
   color: white !important;
+}
+html body header .new-nav {
+  position: fixed !important;
+  top: 0;
+  padding-top: 0;
+  background-color: #fff !important;
+  transition: 0.3s ease-in-out;
+  -webkit-box-shadow: 3px 13px 18px 0px rgba(0, 0, 0, 0.22);
+  -moz-box-shadow: 3px 13px 18px 0px rgba(0, 0, 0, 0.22);
+  box-shadow: 3px 13px 18px 0px rgba(0, 0, 0, 0.22);
+}
+html body header .new-nav ul li a {
+  color: black !important;
+}
+html body header .new-nav .logo-white {
+  display: none;
+}
+html body header .new-nav .logo-color {
+  opacity: 1 !important;
 }
 html body header .cabecera-img {
   width: 100%;
