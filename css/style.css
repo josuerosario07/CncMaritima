@@ -541,5 +541,54 @@ html body .route-traffic .container .routes .table-striped tbody tr:nth-of-type(
 html body .route-traffic .container .routes .table-striped tbody tr:nth-of-type(odd) th {
   border-left: none !important;
 }
+html body .agentes ul {
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 30px 80px 0px 80px;
+  margin-top: -50px;
+  background: white;
+  position: relative;
+  -webkit-box-shadow: 2px 13px 25px -13px #7a7a7a;
+  -moz-box-shadow: 2px 13px 25px -13px #7a7a7a;
+  box-shadow: 2px 13px 25px -13px #7a7a7a;
+}
+html body .agentes ul li {
+  display: flex;
+  flex-flow: row;
+  align-items: flex-start;
+  font-size: 16px;
+}
+html body .agentes ul li .father {
+  display: flex;
+  flex-flow: row;
+  align-items: flex-start;
+}
+html body .agentes ul li a {
+  color: black;
+  margin-left: 15px;
+  padding-bottom: 30px;
+  width: 100%;
+}
+html body .agentes ul li a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 3px;
+  background: #06C37A;
+  transition: width 0.3s;
+  margin-top: 20px;
+}
+html body .agentes ul li span {
+  font-size: 13px;
+  color: #A8A8A8;
+}
+html body .agentes ul li .active {
+  background: transparent !important;
+  color: unset !important;
+}
+html body .agentes ul li .active::after {
+  width: 100%;
+}
 
 /*# sourceMappingURL=style.css.map */

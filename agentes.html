@@ -28,10 +28,10 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Itinerario</a>
+                            <a class="nav-link" href="itinerario.html">Itinerario</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link " href="agentes.html" tabindex="-1" aria-disabled="true">
@@ -119,89 +119,59 @@
             </a>
         </div> -->
     </header>
-    <section class="tabs">
+    <section class="agentes">
+        <div class="container">
+            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                <li class="nav-item">
+                    <img src="assets/img/agencias-asociadas.svg" alt=""> <a class="nav-link active" id="pills-home-tab"
+                        data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home"
+                        aria-selected="true">Agentes Representates<br>
+                        <span>Agentes Respresentantes Operando</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <img src="assets/img/agentes-carga.svg" alt=""> <a class="nav-link" id="pills-profile-tab"
+                        data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile"
+                        aria-selected="false">Agentes de Carga <br>
+                        <span>Agentes operadores de contenedores</span></a>
+                </li>
 
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-4 col-lg-3 col-12">
+                            <div class="item-card">
+                                <div class="header-card">
+                                    <img src="assets/img/agentes/logo-itinerario-amarit.gif" alt="">
+                                    <h3>Agencia Marítima Y
+                                        Comercial Srl</h3>
+                                </div>
+                                <div class="text-card">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consetetur
+                                        sadipscing elitr, sed diam nonumy eirmod
+                                        tempor invidunt ut labore et dolore magna
+                                        aliquyam erat, sed diam voluptua. At vero eos
+                                    </p>
+                                </div>
+                                <div class="contact-card">
+                                    <a href=""><img src="assets/img/domain.svg" alt=""> Visitar web </a>
+                                    <a href=""><img src="assets/img/" alt=""> </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...
+                </div>
+
+            </div>
+
+        </div>
 
     </section>
-    <div class="route-traffic">
-        <div class="container">
-            <h1>Selecciona tu ruta</h1>
-            <div class="tag-recent">
-                <h5>Busquedas Recientes:</h5>
-                <ul>
-                    <li><span>Haina REp Dom</span></li>
-                    <li><span>Haina REp Dom</span></li>
-                    <li><span>Haina REp Dom</span></li>
-                </ul>
-            </div>
-            <div class="item-result">
-                <h3>Rutas de exportacion:</h3>
-                <h5>Estas son als rutas conforme a tu solicitud de busqueda</h5>
-            </div>
-            <div class="map-result">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d967643.6569048542!2d-70.69186089043707!3d18.67036549744392!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eaf8838def1b6f5%3A0xa6020f24060df7e0!2sRep%C3%BAblica%20Dominicana!5e0!3m2!1ses-419!2sdo!4v1574178037842!5m2!1ses-419!2sdo"
-                    width="100%" height="694" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-            </div>
 
-            <div class="routes">
-                <button class="btn btn-excell ml-auto d-block">Comprar resultados en excell</button>
-                <table class="table table-striped">
-                    <!-- <thead>
-                        <tr>
-                            <th scope="col">Origen<br><span>Puerto de Caucedo</span> </th>
-                            <th scope="col">First</th>
-                            <th scope="col">Last</th>
-                            <th scope="col">Handle</th>
-                        </tr>
-                    </thead> -->
-                    <tbody class="text-center">
-                        <tr>
-                            <th scope="row">Origen<br><span>Puerto de Caucedo</span> </th>
-                            <td>Destino<br><span>Puerto de Haina</span></td>
-                            <td>Tiempo de transito<br><span>36 Semanas</span></td>
-                            <td>Frecuencia<br><span>Lunes de cada mes</span></td>
-                            <td>Tipo de Carga<br><span>truckload</span></td>
-                            <td>Agente Representante<br><span>Marítima Dominicana</span></td>
-                            <td>Tipo de contenedor<br><span>Refrigerado</span></td>
-                            <td><Button class="btn btn-primary">Seleccionar</Button></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Origen<br><span>Puerto de Caucedo</span> </th>
-                            <td>Destino<br><span>Puerto de Haina</span></td>
-                            <td>Tiempo de transito<br><span>36 Semanas</span></td>
-                            <td>Frecuencia<br><span>Lunes de cada mes</span></td>
-                            <td>Tipo de Carga<br><span>truckload</span></td>
-                            <td>Agente Representante<br><span>Marítima Dominicana</span></td>
-                            <td>Tipo de contenedor<br><span>Refrigerado</span></td>
-                            <td><Button class="btn btn-primary">Seleccionar</Button></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Origen<br><span>Puerto de Caucedo</span> </th>
-                            <td>Destino<br><span>Puerto de Haina</span></td>
-                            <td>Tiempo de transito<br><span>36 Semanas</span></td>
-                            <td>Frecuencia<br><span>Lunes de cada mes</span></td>
-                            <td>Tipo de Carga<br><span>truckload</span></td>
-                            <td>Agente Representante<br><span>Marítima Dominicana</span></td>
-                            <td>Tipo de contenedor<br><span>Refrigerado</span></td>
-                            <td><Button class="btn btn-primary">Seleccionar</Button></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Origen<br><span>Puerto de Caucedo</span> </th>
-                            <td>Destino<br><span>Puerto de Haina</span></td>
-                            <td>Tiempo de transito<br><span>36 Semanas</span></td>
-                            <td>Frecuencia<br><span>Lunes de cada mes</span></td>
-                            <td>Tipo de Carga<br><span>truckload</span></td>
-                            <td>Agente Representante<br><span>Marítima Dominicana</span></td>
-                            <td>Tipo de contenedor<br><span>Refrigerado</span></td>
-                            <td><Button class="btn btn-primary">Seleccionar</Button></td>
-                        </tr>
-                    </tbody>
-                </table>
-                <button class="btn btn-excell ml-auto d-block">Comprar resultados en excell</button>
-            </div>
-        </div>
-    </div>
     <footer>
         <div class="container">
             <div class="father-content-footer">
