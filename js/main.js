@@ -15,7 +15,6 @@
 //     $('.indicator').click(function () {
 //         $(this).toggleClass('active-indicator');
 //         $(this).siblings().removeClass('active-indicator');
-//     });
 
 
 //     //* Form js
