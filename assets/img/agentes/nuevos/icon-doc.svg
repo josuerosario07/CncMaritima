@@ -2,7 +2,7 @@
   <defs>
     <linearGradient id="linear-gradient" x1="-1.048" y1="-1.009" x2="1.308" y2="1.185" gradientUnits="objectBoundingBox">
       <stop offset="0" stop-color="#42acfa"/>
-      <stop offset="1" stop-color="#ff5f5f"/>
+      <stop offset="1" stop-color="#00bde0"/>
     </linearGradient>
   </defs>
   <path id="stock-photo-happy-young-fashion-man-walking-with-his-hand-in-pocket-on-studio-background-289775255" d="M27,0H348a27,27,0,0,1,27,27V376a27,27,0,0,1-27,27H27A27,27,0,0,1,0,376V27A27,27,0,0,1,27,0Z" fill="url(#linear-gradient)"/>

@@ -27,3 +27,18 @@ $graymed: #676767;
 $borderGreen: #06C37A;
 $orange:#E67D22;
 $rednav: #ED1C24;
+
+
+@mixin flexColum {
+    display: flex;
+    flex-direction: column;
+    flex-flow: column;
+    flex: 1 1 auto;
+}
+
+@mixin FlexRow {
+    display: flex;
+    flex-flow: row;
+    flex-direction: row;
+    flex: 1 1 auto;
+}
