@@ -85,11 +85,16 @@ html body header .navbar {
   transition: 0.3s ease-in-out;
   padding-top: 20px;
   background: transparent;
-  max-height: 115px;
+  min-height: 115px;
   position: absolute;
   top: 0;
   width: 100%;
   z-index: 2;
+}
+@media screen and (max-width: 991px) {
+  html body header .navbar {
+    min-height: auto !important;
+  }
 }
 html body header .navbar .navbar-brand {
   position: relative;
@@ -103,21 +108,47 @@ html body header .navbar .logo-white {
   display: block;
 }
 html body header .navbar .logo-color {
-  opacity: 0;
+  display: none;
 }
 html body header .navbar ul {
   margin-right: 80px;
+}
+@media screen and (max-width: 991px) {
+  html body header .navbar ul {
+    margin-top: 30px;
+  }
 }
 html body header .navbar ul li {
   margin: 0 20px;
 }
 html body header .navbar ul li a {
   color: white !important;
+  font-family: Raleway-med;
+}
+html body header .navbar ul li a:hover {
+  color: #A8A8A8 !important;
+}
+@media screen and (max-width: 991px) {
+  html body header .navbar ul li {
+    margin-top: 15px;
+  }
+}
+html body header .navbar ul li::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 3px;
+  background: white;
+  transition: width 0.3s;
+  margin-top: 20px;
+}
+html body header .navbar ul li:hover::after {
+  width: 100%;
 }
 html body header .new-nav {
   position: fixed !important;
   top: 0;
-  padding-top: 0;
+  padding-top: 20px;
   background-color: #fff !important;
   transition: 0.3s ease-in-out;
   -webkit-box-shadow: 3px 13px 18px 0px rgba(0, 0, 0, 0.22);
@@ -127,11 +158,18 @@ html body header .new-nav {
 html body header .new-nav ul li a {
   color: black !important;
 }
+html body header .new-nav ul li a:hover {
+  color: #004B8D !important;
+}
+html body header .new-nav ul li::after {
+  background: #06C37A;
+}
 html body header .new-nav .logo-white {
   display: none;
 }
 html body header .new-nav .logo-color {
   opacity: 1 !important;
+  display: block;
 }
 html body header .cabecera-img {
   width: 100%;
@@ -154,6 +192,12 @@ html body header .jumbotron h1 {
   max-width: 763px;
   font-size: 76px;
   margin-bottom: 60px;
+}
+@media screen and (max-width: 480px) {
+  html body header .jumbotron h1 {
+    font-size: 45px;
+    margin-bottom: 120px;
+  }
 }
 html body header .jumbotron a {
   text-transform: uppercase;
@@ -243,10 +287,6 @@ html body .content .maps-location ul {
     flex-direction: row;
     flex: 1 1 auto;
     justify-content: space-between;
-  }
-}
-@media screen and (max-width: 991px) {
-  html body .content .maps-location ul {
     display: none;
   }
 }
@@ -318,9 +358,9 @@ html body .content .maps-location ul li .divider {
   width: 200px !important;
   margin-left: 20px;
 }
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1025px) {
   html body .content .maps-location ul li .divider {
-    display: none;
+    width: 100px;
   }
 }
 html body .docs-info {
@@ -594,12 +634,43 @@ html body .tabs ul {
   -moz-box-shadow: 2px 13px 25px -13px #7a7a7a;
   box-shadow: 2px 13px 25px -13px #7a7a7a;
 }
+@media screen and (max-width: 991px) {
+  html body .tabs ul {
+    justify-content: space-around;
+  }
+}
+@media screen and (max-width: 768px) {
+  html body .tabs ul {
+    padding-left: 13px;
+    padding-right: 13px;
+  }
+}
 html body .tabs ul li {
   display: flex;
   flex-flow: row;
   align-items: flex-start;
   max-width: 300px;
   font-size: 16px;
+}
+@media screen and (max-width: 636px) {
+  html body .tabs ul li {
+    flex-flow: column;
+    text-align: center;
+    align-items: center;
+  }
+  html body .tabs ul li img {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 850px) {
+  html body .tabs ul li {
+    max-width: 250px;
+  }
+}
+@media screen and (max-width: 768px) {
+  html body .tabs ul li {
+    max-width: 200px;
+  }
 }
 html body .tabs ul li .father {
   display: flex;
@@ -612,6 +683,17 @@ html body .tabs ul li a {
   padding-bottom: 30px;
   width: 100%;
 }
+@media screen and (max-width: 636px) {
+  html body .tabs ul li a {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  html body .tabs ul li a {
+    padding: 0;
+    height: 100px;
+  }
+}
 html body .tabs ul li a::after {
   content: "";
   display: block;
@@ -621,9 +703,24 @@ html body .tabs ul li a::after {
   transition: width 0.3s;
   margin-top: 20px;
 }
+@media screen and (max-width: 768px) {
+  html body .tabs ul li .mini-for-tab {
+    height: 45px;
+  }
+}
+@media screen and (max-width: 636px) {
+  html body .tabs ul li .mini-for-tab {
+    height: auto;
+  }
+}
 html body .tabs ul li span {
   font-size: 13px;
   color: #A8A8A8;
+}
+@media screen and (max-width: 636px) {
+  html body .tabs ul li span {
+    display: none;
+  }
 }
 html body .tabs ul li .active {
   background: transparent !important;
@@ -631,6 +728,109 @@ html body .tabs ul li .active {
 }
 html body .tabs ul li .active::after {
   width: 100%;
+}
+html body .tabs .tab-pane {
+  min-height: 950px;
+  margin-top: 100px;
+}
+html body .tabs .tab-pane form {
+  margin-top: 112px;
+  max-width: 686px;
+  background: #fff;
+  max-height: 535px;
+  display: block;
+  margin: 0 auto;
+  padding: 58px;
+  -webkit-box-shadow: 0px 0px 97px -11px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 0px 97px -11px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 97px -11px rgba(0, 0, 0, 0.25);
+  position: relative;
+}
+html body .tabs .tab-pane form h3 {
+  font-family: Raleway-med;
+  font-size: 30px;
+}
+html body .tabs .tab-pane form .divider {
+  width: 100%;
+  height: 2px;
+  background: #d8d6d6;
+  margin: 25px 0;
+}
+html body .tabs .tab-pane form .form-control {
+  height: 60px;
+  border: solid 1px #d8d6d6;
+  margin: 25px 0;
+  border-left: 14px solid #004B8D;
+  background: #fff !important;
+  padding-left: 30px;
+  border-radius: 0 !important;
+}
+html body .tabs .tab-pane form .btn {
+  display: block;
+  margin: 20px auto;
+  width: 158px;
+  border-radius: 30px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.356);
+}
+html body .tabs .tab-pane form .form-group {
+  position: relative;
+}
+html body .tabs .tab-pane form img {
+  position: absolute;
+  left: 20px;
+  top: 18px;
+}
+html body .tabs .tab-pane .forms-lines {
+  max-width: 1400px;
+  display: flex;
+  flex-direction: column;
+  flex-flow: column;
+  flex: 1 1 auto;
+}
+html body .tabs .tab-pane .forms-lines .select-group {
+  display: flex;
+  flex-flow: row;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  flex: 1 1 auto;
+}
+html body .tabs .tab-pane .forms-lines .select-group .form-group {
+  width: 31.3%;
+  border-radius: 0;
+}
+html body .tabs .tab-pane .forms-lines .select-group .form-group .form-control {
+  height: 60px;
+  border: solid 1px #d8d6d6;
+  border-radius: 0 !important;
+  margin: 25px 0;
+  border-left: 14px solid #004B8D;
+  background: #fff !important;
+  padding-left: 30px;
+}
+html body .tabs .tab-pane .forms-lines .red-text {
+  color: red;
+}
+html body .tabs .tab-pane .forms-line-2 {
+  display: block;
+}
+html body .tabs .tab-pane .forms-line-2 .form-control {
+  height: 60px;
+  border: solid 1px #d8d6d6;
+  border-radius: 0 !important;
+  margin: 25px 0;
+  border-left: 14px solid #004B8D;
+  background: #fff !important;
+  padding-left: 30px;
+}
+html body .tabs .tab-pane .forms-line-2 .check {
+  display: flex;
+  flex-flow: row;
+  flex-direction: row;
+  flex: 1 1 auto;
+}
+html body .tabs .tab-pane .forms-line-2 .check .form-check {
+  margin-right: 20px;
 }
 html body .route-traffic {
   margin-top: 110px;
@@ -710,6 +910,9 @@ html body .route-traffic .container .routes .table tbody tr th,
 html body .route-traffic .container .routes .table tbody tr td {
   padding-top: 55px;
 }
+html body .route-traffic .container .routes .table tbody tr .escalas {
+  max-width: 170px;
+}
 html body .route-traffic .container .routes .table tbody tr th {
   border-left: solid 10px #06C37A !important;
 }
@@ -734,7 +937,6 @@ html body .route-traffic .container .routes .table-striped tbody tr:nth-of-type(
 html body .agentes ul {
   justify-content: space-between;
   max-width: 1100px;
-  margin: 0 auto;
   padding: 30px 80px 0px 80px;
   margin-top: -50px;
   background: white;
@@ -779,9 +981,6 @@ html body .agentes ul li .active {
 }
 html body .agentes ul li .active::after {
   width: 100%;
-}
-html body .agentes .tab-content {
-  margin-top: 100px;
 }
 html body .agentes .tab-content .title h1 {
   font-family: Raleway-bold;

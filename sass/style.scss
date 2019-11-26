@@ -26,11 +26,15 @@ html {
                 transition: 0.3s ease-in-out;
                 padding-top: 20px;
                 background: transparent;
-                max-height: 115px;
+                min-height: 115px;
                 position: absolute;
                 top: 0;
                 width: 100%;
                 z-index: 2;
+
+                @media screen and (max-width:991px) {
+                    min-height: auto !important;
+                }
 
                 .navbar-brand {
                     position: relative;
@@ -49,17 +53,46 @@ html {
                 }
 
                 .logo-color {
-                    opacity: 0;
+                    display: none;
                 }
 
                 ul {
                     margin-right: 80px;
+
+                    @media screen and (max-width:991px) {
+                        margin-top: 30px;
+                    }
 
                     li {
                         margin: 0 20px;
 
                         a {
                             color: white !important;
+                            font-family: $rm;
+
+                            &:hover {
+                                color: $grayP !important;
+                            }
+                        }
+
+                        @media screen and (max-width:991px) {
+                            margin-top: 15px;
+                        }
+
+                        &::after {
+                            content: '';
+                            display: block;
+                            width: 0;
+                            height: 3px;
+                            background: white;
+                            transition: width .3s;
+                            margin-top: 20px;
+                        }
+
+                        &:hover {
+                            &::after {
+                                width: 100%;
+                            }
                         }
                     }
                 }
@@ -68,20 +101,28 @@ html {
             .new-nav {
                 position: fixed !important;
                 top: 0;
-                padding-top: 0;
+                padding-top: 20px;
                 background-color: $white !important;
                 transition: 0.3s ease-in-out;
                 -webkit-box-shadow: 3px 13px 18px 0px rgba(0, 0, 0, 0.22);
                 -moz-box-shadow: 3px 13px 18px 0px rgba(0, 0, 0, 0.22);
                 box-shadow: 3px 13px 18px 0px rgba(0, 0, 0, 0.22);
 
+
                 ul {
                     li {
                         a {
                             color: black !important;
+
+                            &:hover {
+                                color: $bluenav !important;
+                            }
+                        }
+
+                        &::after {
+                            background: $borderGreen;
                         }
                     }
-
 
                 }
 
@@ -91,6 +132,7 @@ html {
 
                 .logo-color {
                     opacity: 1 !important;
+                    display: block;
                 }
             }
 
@@ -116,6 +158,11 @@ html {
                     max-width: 763px;
                     font-size: 76px;
                     margin-bottom: 60px;
+
+                    @media screen and (max-width:480px) {
+                        font-size: 45px;
+                        margin-bottom: 120px;
+                    }
                 }
 
                 a {
@@ -147,7 +194,6 @@ html {
 
                 .items {
                     max-width: 992px;
-                    // margin-right: -114px;
 
                     .col-sm-2 {
                         padding: 0 !important;
@@ -224,9 +270,6 @@ html {
                         width: 100%;
                         @include FlexRow;
                         justify-content: space-between;
-                    }
-
-                    @media screen and (max-width:991px) {
                         display: none;
                     }
 
@@ -258,7 +301,6 @@ html {
                                         font-size: 25px;
                                         font-family: $nunitoregular;
 
-                                        // transition: 0.5s all ease-in-out;
                                         @media screen and (max-width:991px) {
                                             font-size: 20px;
                                         }
@@ -269,7 +311,6 @@ html {
                                             position: absolute;
                                             width: 20px;
 
-                                            // transition: 0.5s all ease-in-out;
                                             @media screen and (max-width:991px) {
                                                 transform: rotate(-90deg);
                                             }
@@ -319,16 +360,13 @@ html {
                             width: 200px !important;
                             margin-left: 20px;
 
-
-                            @media screen and (max-width:991px) {
-                                display: none;
+                            @media screen and (max-width:1025px) {
+                                width: 100px;
                             }
-
                         }
                     }
                 }
             }
-
 
         }
 
@@ -361,11 +399,6 @@ html {
                         width: 100%;
                         height: 100%;
                         object-fit: contain;
-                        // -webkit-box-shadow: 3px 13px 18px 0px rgba(0, 0, 0, 0.22);
-                        // -moz-box-shadow: 3px 13px 18px 0px rgba(0, 0, 0, 0.22);
-                        // box-shadow: 3px 13px 18px 0px rgba(0, 0, 0, 0.22);
-
-
                     }
                 }
 
@@ -518,7 +551,6 @@ html {
                     @include flexColum;
                     flex-wrap: nowrap;
 
-                    // min-width: 1100px;
                     @media screen and (max-width:991px) {
                         width: 100% !important;
                     }
@@ -618,9 +650,6 @@ html {
                 justify-content: space-between;
                 max-width: 1100px;
                 margin: 0 auto;
-                // padding-left: 20px;
-                // padding-right: 20px;
-                // padding-top: 30px;
                 padding: 30px 30px 0px 30px;
                 margin-top: -50px;
                 background: white;
@@ -629,21 +658,48 @@ html {
                 -moz-box-shadow: 2px 13px 25px -13px rgba(122, 122, 122, 1);
                 box-shadow: 2px 13px 25px -13px rgba(122, 122, 122, 1);
 
+                @media screen and (max-width:991px) {
+                    justify-content: space-around;
+                }
+
+                @media screen and (max-width:768px) {
+                    padding-left: 13px;
+                    padding-right: 13px;
+                }
+
                 li {
                     display: flex;
                     flex-flow: row;
                     align-items: flex-start;
                     max-width: 300px;
-                    // margin-right: 100px;
                     font-size: 16px;
-                    // justify-content: center;
+
+                    @media screen and (max-width:636px) {
+                        flex-flow: column;
+                        text-align: center;
+                        align-items: center;
+
+                        img {
+                            margin-bottom: 30px;
+                        }
+                    }
+
+                    @media screen and (max-width:850px) {
+                        max-width: 250px;
+                    }
+
+                    @media screen and (max-width:768px) {
+                        max-width: 200px;
+                        // margin-right: 10px;
+                    }
 
                     .father {
                         display: flex;
                         flex-flow: row;
                         align-items: flex-start;
-                    }
 
+
+                    }
 
                     a {
                         color: black;
@@ -651,6 +707,16 @@ html {
                         padding-bottom: 30px;
                         width: 100%;
 
+                        @media screen and (max-width:636px) {
+                            margin-left: 0;
+
+
+                        }
+
+                        @media screen and (max-width:768px) {
+                            padding: 0;
+                            height: 100px;
+                        }
 
                         &::after {
                             content: '';
@@ -663,9 +729,23 @@ html {
                         }
                     }
 
+                    .mini-for-tab {
+                        @media screen and (max-width:768px) {
+                            height: 45px;
+                        }
+
+                        @media screen and (max-width:636px) {
+                            height: auto;
+                        }
+                    }
+
                     span {
                         font-size: 13px;
                         color: $grayP;
+
+                        @media screen and (max-width:636px) {
+                            display: none;
+                        }
                     }
 
                     .active {
@@ -678,6 +758,123 @@ html {
 
                     }
                 }
+            }
+
+
+            .tab-pane {
+                min-height: 950px;
+                margin-top: 100px;
+
+
+                form {
+                    margin-top: 112px;
+                    max-width: 686px;
+                    background: $white;
+                    max-height: 535px;
+                    display: block;
+                    margin: 0 auto;
+                    padding: 58px;
+                    -webkit-box-shadow: 0px 0px 97px -11px rgba(0, 0, 0, 0.25);
+                    -moz-box-shadow: 0px 0px 97px -11px rgba(0, 0, 0, 0.25);
+                    box-shadow: 0px 0px 97px -11px rgba(0, 0, 0, 0.25);
+                    position: relative;
+
+                    h3 {
+                        font-family: $rm;
+                        font-size: 30px;
+                    }
+
+                    .divider {
+                        width: 100%;
+                        height: 2px;
+                        background: $graylighter;
+                        margin: 25px 0;
+                    }
+
+                    .form-control {
+                        height: 60px;
+                        border: solid 1px $graylighter;
+                        margin: 25px 0;
+                        border-left: 14px solid $bluenav;
+                        background: $white !important;
+                        padding-left: 30px;
+                        border-radius: 0 !important;
+                    }
+
+                    .btn {
+                        display: block;
+                        margin: 20px auto;
+                        width: 158px;
+                        border-radius: 30px;
+                        box-shadow: 0 0 25px rgba(0, 0, 0, 0.356);
+                    }
+
+                    .form-group {
+                        position: relative;
+                    }
+
+                    img {
+                        position: absolute;
+                        left: 20px;
+                        top: 18px;
+                    }
+                }
+
+                .forms-lines {
+                    max-width: 1400px;
+                    @include flexColum;
+
+                    .select-group {
+                        @include FlexRow;
+                        justify-content: space-between;
+                        flex: 1 1 auto;
+
+                        .form-group {
+                            width: 31.3%;
+                            border-radius: 0;
+
+                            .form-control {
+                                height: 60px;
+                                border: solid 1px $graylighter;
+                                border-radius: 0 !important;
+                                margin: 25px 0;
+                                border-left: 14px solid $bluenav;
+                                background: $white !important;
+                                padding-left: 30px;
+                            }
+
+
+                        }
+                    }
+
+                    .red-text {
+                        color: red;
+                    }
+                }
+
+                .forms-line-2 {
+                    display: block;
+
+                    .form-control {
+                        height: 60px;
+                        border: solid 1px $graylighter;
+                        border-radius: 0 !important;
+                        margin: 25px 0;
+                        border-left: 14px solid $bluenav;
+                        background: $white !important;
+                        padding-left: 30px;
+                    }
+
+                    .check {
+                        @include FlexRow;
+
+                        .form-check {
+                            margin-right: 20px;
+                        }
+                    }
+                }
+
+
             }
 
 
@@ -780,6 +977,10 @@ html {
                                     // border: none;
                                 }
 
+                                .escalas {
+                                    max-width: 170px;
+                                }
+
                                 th {
                                     border-left: solid 10px $borderGreen !important;
                                 }
@@ -818,10 +1019,6 @@ html {
 
                 justify-content: space-between;
                 max-width: 1100px;
-                margin: 0 auto;
-                // padding-left: 20px;
-                // padding-right: 20px;
-                // padding-top: 30px;
                 padding: 30px 80px 0px 80px;
                 margin-top: -50px;
                 background: white;
@@ -834,9 +1031,7 @@ html {
                     display: flex;
                     flex-flow: row;
                     align-items: flex-start;
-                    // margin-right: 100px;
                     font-size: 16px;
-                    // justify-content: center;
 
                     .father {
                         display: flex;
@@ -881,7 +1076,9 @@ html {
             }
 
             .tab-content {
-                margin-top: 100px;
+
+
+
 
                 .title {
                     h1 {
