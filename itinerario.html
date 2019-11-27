@@ -16,34 +16,36 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light ">
-            <div class="container">
-                <a class="navbar-brand logo-white" href="#"><img src="assets/img/white-logo.png" alt=""></a>
-                <a class="navbar-brand logo-color" href="#"><img src="assets/img/Conecta-Logo-01.svg" alt=""></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="itinerario.html">Itinerario</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link " href="agentes.html" tabindex="-1" aria-disabled="true">
-                                Agencias
-                                Asociadas</a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- <a href=""><img src="assets/img/search.png" alt=""></a> -->
-            </div>
-        </nav>
+            <nav class="navbar navbar-expand-lg navbar-light ">
+                    <div class="container">
+                        <a class="navbar-brand logo-white" href="#"><img src="assets/img/white-logo.png" alt=""></a>
+                        <a class="navbar-brand logo-color" href="#"><img src="assets/img/Conecta-Logo-01.svg" alt=""></a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+        
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="itinerario.html">Itinerario</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link " href="agentes.html" tabindex="-1" aria-disabled="true">
+                                        Agencias
+                                        Asociadas</a>
+                                </li>
+                                <!-- <li><a class="nav-item" href=""><img src="assets/img/search.png" alt=""></a></li>
+                                <li class="search-black"><a class="nav-item" href=""><img src="assets/img/search-black.svg" alt=""></a></li> -->
+                            </ul>
+                        </div>
+        
+                    </div>
+                </nav>
         <img class="cabecera-img" src="assets/img/slide01.jpg" alt="">
         <div class="container">
             <div class="jumbotron">
@@ -154,7 +156,7 @@
             </ul>
             <div class="tab-content" id="pills-tabContent">
                 <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-                    <form>
+                    <!-- <form>
                         <fieldset disabled>
                             <h3>Que quieres hacer?</h3>
                             <div class="divider"></div>
@@ -170,238 +172,18 @@
 
 
                         <button type="submit" class="btn btn-primary">Enviar</button>
-                    </form>
-                    <form>
-                        <h3>Salida Y Destino</h3>
-                        <div class="divider"></div>
-                        <div class="form-group">
-                            <select class=" form-control-select">
-                                <option>Origen</option>
-                            </select>
-                        </div>
-                        <div class="form-group ">
-                            <select class=" form-control-select">
-                                <option>Destino</option>
-                            </select>
-                        </div>
-
-
-
-
-                        <button type="submit" class="btn btn-primary">Enviar</button>
-                    </form>
-                    <form class="forms-lines">
-                        <h3>Linea Operadora</h3>
-                        <div class="divider"></div>
-                        <div class="select-group">
-                            <div class="form-group">
-                                <select class="form-control">
-                                    <option>Seleccione na linea operadora</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <select class="form-control">
-                                    <option>Indica un tipo de carga</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <select class="form-control">
-                                    <option>Elige el tipo de buque</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control" id="inlineFormInput"
-                                placeholder="Elige un agente respresentante">
-                        </div>
-                        <small> <span class="red-text">*</span> ( Solo padres seleccionar los agentes que presentan la
-                            linea seleccionada )
-                        </small>
-
-
-
-
-                        <button type="submit" class="btn btn-primary">Enviar</button>
-                    </form>
-                    <form class=" forms-line-2">
-                        <h3>Duracion de trayecto</h3>
-                        <div class="divider"></div>
-
-                        <div class="check">
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
-                                    value="option1" checked>
-                                <label class="form-check-label" for="exampleRadios1">
-                                    Salida
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
-                                    value="option1" checked>
-                                <label class="form-check-label" for="exampleRadios1">
-                                    Llegada
-                                </label>
-                            </div>
-                        </div>
-                        <div class="select-group">
-                            <div class="form-group">
-                                <select class="form-control">
-                                    <option>Seleccione na linea operadora</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <select class="form-control">
-                                    <option>Indica un tipo de carga</option>
-                                </select>
-                            </div>
-                        </div>
-
-
-
-
-
-                        <button type="submit" class="btn btn-primary">Enviar</button>
-                    </form>
-                </div>
-                <div class="tab-pane fade" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-                    <form>
-                        <fieldset disabled>
-                            <h3>Que quieres hacer?</h3>
-                            <div class="divider"></div>
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="disabledTextInput" placeholder="Exportar">
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="disabledTextInput" placeholder="Importar">
-                            </div>
-
-                        </fieldset>
-
-
-
-                        <button type="submit" class="btn btn-primary">Enviar</button>
-                    </form>
-                    <form>
-                        <h3>Salida Y Destino</h3>
-                        <div class="divider"></div>
-                        <div class="form-group">
-                            <select class=" form-control-select">
-                                <option>Origen</option>
-                            </select>
-                        </div>
-                        <div class="form-group ">
-                            <select class=" form-control-select">
-                                <option>Destino</option>
-                            </select>
-                        </div>
-
-
-
-
-                        <button type="submit" class="btn btn-primary">Enviar</button>
-                    </form>
-                    <form class="forms-lines">
-                        <h3>Linea Operadora</h3>
-                        <div class="divider"></div>
-                        <div class="select-group">
-                            <div class="form-group">
-                                <select class="form-control">
-                                    <option>Seleccione na linea operadora</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <select class="form-control">
-                                    <option>Indica un tipo de carga</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <select class="form-control">
-                                    <option>Elige el tipo de buque</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control" id="inlineFormInput"
-                                placeholder="Elige un agente respresentante">
-                        </div>
-                        <small> <span class="red-text">*</span> ( Solo padres seleccionar los agentes que presentan la
-                            linea seleccionada )
-                        </small>
-
-
-
-
-                        <button type="submit" class="btn btn-primary">Enviar</button>
-                    </form>
-                    <form class=" forms-line-2">
-                        <h3>Duracion de trayecto</h3>
-                        <div class="divider"></div>
-
-                        <div class="check">
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
-                                    value="option1" checked>
-                                <label class="form-check-label" for="exampleRadios1">
-                                    Salida
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
-                                    value="option1" checked>
-                                <label class="form-check-label" for="exampleRadios1">
-                                    Llegada
-                                </label>
-                            </div>
-                        </div>
-                        <div class="select-group">
-                            <div class="form-group">
-                                <select class="form-control">
-                                    <option>Seleccione na linea operadora</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <select class="form-control">
-                                    <option>Indica un tipo de carga</option>
-                                </select>
-                            </div>
-                        </div>
-
-
-
-
-
-                        <button type="submit" class="btn btn-primary">Enviar</button>
-                    </form>
-                </div>
-                <div class="tab-pane fade " id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-                    <form>
-                        <fieldset disabled>
-                            <h3>Que quieres hacer?</h3>
-                            <div class="divider"></div>
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="disabledTextInput" placeholder="Exportar">
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="disabledTextInput" placeholder="Importar">
-                            </div>
-
-                        </fieldset>
-
-
-
-                        <button type="submit" class="btn btn-primary">Enviar</button>
-                    </form>
+                    </form> -->
                     <!-- <form>
                         <h3>Salida Y Destino</h3>
                         <div class="divider"></div>
                         <div class="form-group">
-                            <img src="assets/img/location-form.png" alt=""> <input type="text" class="form-control"
-                                id="inlineFormInput" placeholder=" Indica un origen">
+                            <select class=" form-control-select">
+                                <option>Origen</option>
+                            </select>
                         </div>
-                        <div class="" style="background:red">
-                            <img src="assets/img/location-form.png" alt="">
-                            <select class="form-control">
-                                <option>PEro Diablazo</option>
+                        <div class="form-group ">
+                            <select class=" form-control-select">
+                                <option>Destino</option>
                             </select>
                         </div>
 
@@ -410,7 +192,7 @@
 
                         <button type="submit" class="btn btn-primary">Enviar</button>
                     </form> -->
-                    <form class="forms-lines">
+                    <!-- <form class="forms-lines">
                         <h3>Linea Operadora</h3>
                         <div class="divider"></div>
                         <div class="select-group">
@@ -442,8 +224,8 @@
 
 
                         <button type="submit" class="btn btn-primary">Enviar</button>
-                    </form>
-                    <form class=" forms-line-2">
+                    </form> -->
+                    <!-- <form class=" forms-line-2">
                         <h3>Duracion de trayecto</h3>
                         <div class="divider"></div>
 
@@ -481,8 +263,9 @@
 
 
                         <button type="submit" class="btn btn-primary">Enviar</button>
-                    </form>
+                    </form> -->
                 </div>
+
             </div>
 
         </div>
@@ -511,67 +294,148 @@
             </div>
 
             <div class="routes">
-                <button class="btn btn-excell ml-auto d-block">Comprar resultados en excell</button>
-                <div class="table-responsive">
-                    <table class="table table-striped ">
-                        <!-- <thead>
-                                            <tr>
-                                                <th scope="col">Origen<br><span>Puerto de Caucedo</span> </th>
-                                                <th scope="col">First</th>
-                                                <th scope="col">Last</th>
-                                                <th scope="col">Handle</th>
-                                            </tr>
-                                        </thead> -->
-                        <tbody class="text-center">
-                            <tr>
-                                <th scope="row">Origen<br><span>Puerto de Caucedo</span> </th>
-                                <td>Destino<br><span>Puerto de Haina</span></td>
-                                <td>Tiempo de transito<br><span>36 Semanas</span></td>
-                                <td>Frecuencia<br><span>Lunes de cada mes</span></td>
-                                <td>Tipo de Carga<br><span>truckload</span></td>
-                                <td>Agente Representante<br><span>Marítima Dominicana</span></td>
-                                <td>Tipo de contenedor<br><span>Refrigerado</span></td>
-                                <td class="escalas">Escalas<br><span>Madrid-turquia-angola-<Gegoria-Oman</span> </td>
-                                            <td><Button class="btn btn-primary">Seleccionar</Button></td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Origen<br><span>Puerto de Caucedo</span> </th>
-                                <td>Destino<br><span>Puerto de Haina</span></td>
-                                <td>Tiempo de transito<br><span>36 Semanas</span></td>
-                                <td>Frecuencia<br><span>Lunes de cada mes</span></td>
-                                <td>Tipo de Carga<br><span>truckload</span></td>
-                                <td>Agente Representante<br><span>Marítima Dominicana</span></td>
-                                <td>Tipo de contenedor<br><span>Refrigerado</span></td>
-                                <td class="escalas">Escalas<br><span>Madrid-turquia-angola-<Gegoria-Oman</span> </td>
-                                            <td><Button class="btn btn-primary">Seleccionar</Button></td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Origen<br><span>Puerto de Caucedo</span> </th>
-                                <td>Destino<br><span>Puerto de Haina</span></td>
-                                <td>Tiempo de transito<br><span>36 Semanas</span></td>
-                                <td>Frecuencia<br><span>Lunes de cada mes</span></td>
-                                <td>Tipo de Carga<br><span>truckload</span></td>
-                                <td>Agente Representante<br><span>Marítima Dominicana</span></td>
-                                <td>Tipo de contenedor<br><span>Refrigerado</span></td>
-                                <td class="escalas">Escalas<br><span>Madrid-turquia-angola-<Gegoria-Oman</span> </td>
-                                            <td><Button class="btn btn-primary">Seleccionar</Button></td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Origen<br><span>Puerto de Caucedo</span> </th>
-                                <td>Destino<br><span>Puerto de Haina</span></td>
-                                <td>Tiempo de transito<br><span>36 Semanas</span></td>
-                                <td>Frecuencia<br><span>Lunes de cada mes</span></td>
-                                <td>Tipo de Carga<br><span>truckload</span></td>
-                                <td>Agente Representante<br><span>Marítima Dominicana</span></td>
-                                <td>Tipo de contenedor<br><span>Refrigerado</span></td>
-                                <td class="escalas">Escalas<br><span>Madrid-turquia-angola-<Gegoria-Oman</span> </td>
-                                            <td><Button class="btn btn-primary">Seleccionar</Button></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-3">
+                        <div class="selects-lines">
+                                <h3>Rutas de exportacion:</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem harum vel labore porro vero perferendis deserunt! Velit maiores nisi repudiandae vero quia aliquid, quaerat a esse? Vitae, minus? Eos, consequuntur?</p>
+                                <div class="form-checkbox">
+                                        <label class="control checkbox-label">Todas Las Lineas
+                                                <input type="checkbox" checked="checked"/>
+                                                <div class="control-indicator"></div>
+                                              </label>
+                                              <label class="control checkbox-label">Seaborad Dominicana
+                                                <input type="checkbox"/>
+                                                <div class="control-indicator"></div>
+                                              </label>  
+                                              <label class="control checkbox-label">Zim
+                                                  <input type="checkbox"/>
+                                                  <div class="control-indicator"></div>
+                                              </label>  
+                                              <label class="control checkbox-label">Evergreen
+                                                  <input type="checkbox"/>
+                                                  <div class="control-indicator"></div>
+                                              </label>  
+                                              <label class="control checkbox-label">Hambursd
+                                                    <input type="checkbox"/>
+                                                    <div class="control-indicator"></div>
+                                                </label>  
+                                    
+                                    </div>
+                                    <hr>
 
-                <button class="btn btn-excell ml-auto d-block">Comprar resultados en excell</button>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem harum </p>
+                                    <button class="btn btn-excell mx-auto d-block mt-5 ">Ver Agentes de Carga</button>
+
+
+                                      
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-9">
+                            <div class="table-responsive">
+                                <table class="table table-striped ">
+                                    <tbody class="text-center">
+                                        <tr>
+                                            <th scope="row">Origen<br><span>Puerto de Caucedo</span> </th>
+                                            <td>Destino<br><span>Puerto de Haina</span>
+                                            <div class="divider-top"></div>
+                                            </td>
+                                            <td>Tiempo de transito<br><span>36 Semanas</span><div class="divider-top"></div></td>
+                                            <td>Frecuencia<br><span>Lunes de cada mes</span><div class="divider-top"></div></td>
+                                            <td>Tipo de Carga<br><span>truckload</span><div class="divider-top"></div></td>
+                                            <!-- <td>Agente Representante<br><span>Marítima Dominicana</span><div class="divider-top"></div></td> -->
+                                            <td>Tipo de contenedor<br><span>Refrigerado</span><div class="divider-top"></div></td>
+                                            <td class="escalas">Escalas<br><span>Madrid-turquia-angola-<Gegoria-Oman</span><div class="divider-top"></div> </td>
+                                                        <td><Button class="btn btn-primary">Seleccionar</Button><div class="divider-top"></div></td>
+                                        </tr>
+                                        <tr>
+                                                <th scope="row">Origen<br><span>Puerto de Caucedo</span> </th>
+                                                <td>Destino<br><span>Puerto de Haina</span>
+                                                <div class="divider-top"></div>
+                                                </td>
+                                                <td>Tiempo de transito<br><span>36 Semanas</span><div class="divider-top"></div></td>
+                                                <td>Frecuencia<br><span>Lunes de cada mes</span><div class="divider-top"></div></td>
+                                                <td>Tipo de Carga<br><span>truckload</span><div class="divider-top"></div></td>
+                                                <!-- <td>Agente Representante<br><span>Marítima Dominicana</span><div class="divider-top"></div></td> -->
+                                                <td>Tipo de contenedor<br><span>Refrigerado</span><div class="divider-top"></div></td>
+                                                <td class="escalas">Escalas<br><span>Madrid-turquia-angola-<Gegoria-Oman</span><div class="divider-top"></div> </td>
+                                                            <td><Button class="btn btn-primary">Seleccionar</Button><div class="divider-top"></div></td>
+                                            </tr>
+                                            <tr>
+                                                    <th scope="row">Origen<br><span>Puerto de Caucedo</span> </th>
+                                                    <td>Destino<br><span>Puerto de Haina</span>
+                                                    <div class="divider-top"></div>
+                                                    </td>
+                                                    <td>Tiempo de transito<br><span>36 Semanas</span><div class="divider-top"></div></td>
+                                                    <td>Frecuencia<br><span>Lunes de cada mes</span><div class="divider-top"></div></td>
+                                                    <td>Tipo de Carga<br><span>truckload</span><div class="divider-top"></div></td>
+                                                    <!-- <td>Agente Representante<br><span>Marítima Dominicana</span><div class="divider-top"></div></td> -->
+                                                    <td>Tipo de contenedor<br><span>Refrigerado</span><div class="divider-top"></div></td>
+                                                    <td class="escalas">Escalas<br><span>Madrid-turquia-angola-<Gegoria-Oman</span><div class="divider-top"></div> </td>
+                                                                <td><Button class="btn btn-primary">Seleccionar</Button><div class="divider-top"></div></td>
+                                                </tr>
+                                                <tr>
+                                                        <th scope="row">Origen<br><span>Puerto de Caucedo</span> </th>
+                                                        <td>Destino<br><span>Puerto de Haina</span>
+                                                        <div class="divider-top"></div>
+                                                        </td>
+                                                        <td>Tiempo de transito<br><span>36 Semanas</span><div class="divider-top"></div></td>
+                                                        <td>Frecuencia<br><span>Lunes de cada mes</span><div class="divider-top"></div></td>
+                                                        <td>Tipo de Carga<br><span>truckload</span><div class="divider-top"></div></td>
+                                                        <!-- <td>Agente Representante<br><span>Marítima Dominicana</span><div class="divider-top"></div></td> -->
+                                                        <td>Tipo de contenedor<br><span>Refrigerado</span><div class="divider-top"></div></td>
+                                                        <td class="escalas">Escalas<br><span>Madrid-turquia-angola-<Gegoria-Oman</span><div class="divider-top"></div> </td>
+                                                                    <td><Button class="btn btn-primary">Seleccionar</Button><div class="divider-top"></div></td>
+                                                    </tr>
+                                                    <tr>
+                                                            <th scope="row">Origen<br><span>Puerto de Caucedo</span> </th>
+                                                            <td>Destino<br><span>Puerto de Haina</span>
+                                                            <div class="divider-top"></div>
+                                                            </td>
+                                                            <td>Tiempo de transito<br><span>36 Semanas</span><div class="divider-top"></div></td>
+                                                            <td>Frecuencia<br><span>Lunes de cada mes</span><div class="divider-top"></div></td>
+                                                            <td>Tipo de Carga<br><span>truckload</span><div class="divider-top"></div></td>
+                                                            <!-- <td>Agente Representante<br><span>Marítima Dominicana</span><div class="divider-top"></div></td> -->
+                                                            <td>Tipo de contenedor<br><span>Refrigerado</span><div class="divider-top"></div></td>
+                                                            <td class="escalas">Escalas<br><span>Madrid-turquia-angola-<Gegoria-Oman</span><div class="divider-top"></div> </td>
+                                                                        <td><Button class="btn btn-primary">Seleccionar</Button><div class="divider-top"></div></td>
+                                                        </tr>
+                                                        <tr>
+                                                                <th scope="row">Origen<br><span>Puerto de Caucedo</span> </th>
+                                                                <td>Destino<br><span>Puerto de Haina</span>
+                                                                <div class="divider-top"></div>
+                                                                </td>
+                                                                <td>Tiempo de transito<br><span>36 Semanas</span><div class="divider-top"></div></td>
+                                                                <td>Frecuencia<br><span>Lunes de cada mes</span><div class="divider-top"></div></td>
+                                                                <td>Tipo de Carga<br><span>truckload</span><div class="divider-top"></div></td>
+                                                                <!-- <td>Agente Representante<br><span>Marítima Dominicana</span><div class="divider-top"></div></td> -->
+                                                                <td>Tipo de contenedor<br><span>Refrigerado</span><div class="divider-top"></div></td>
+                                                                <td class="escalas">Escalas<br><span>Madrid-turquia-angola-<Gegoria-Oman</span><div class="divider-top"></div> </td>
+                                                                            <td><Button class="btn btn-primary">Seleccionar</Button><div class="divider-top"></div></td>
+                                                            </tr>
+                                                            <tr>
+                                                                    <th scope="row">Origen<br><span>Puerto de Caucedo</span> </th>
+                                                                    <td>Destino<br><span>Puerto de Haina</span>
+                                                                    <div class="divider-top"></div>
+                                                                    </td>
+                                                                    <td>Tiempo de transito<br><span>36 Semanas</span><div class="divider-top"></div></td>
+                                                                    <td>Frecuencia<br><span>Lunes de cada mes</span><div class="divider-top"></div></td>
+                                                                    <td>Tipo de Carga<br><span>truckload</span><div class="divider-top"></div></td>
+                                                                    <!-- <td>Agente Representante<br><span>Marítima Dominicana</span><div class="divider-top"></div></td> -->
+                                                                    <td>Tipo de contenedor<br><span>Refrigerado</span><div class="divider-top"></div></td>
+                                                                    <td class="escalas">Escalas<br><span>Madrid-turquia-angola-<Gegoria-Oman</span><div class="divider-top"></div> </td>
+                                                                                <td><Button class="btn btn-primary">Seleccionar</Button><div class="divider-top"></div></td>
+                                                                </tr>
+
+                                        
+                                    </tbody>
+                                </table>
+                            </div>
+            
+                            <button class="btn btn-excell ml-auto d-block">Comprar resultados en excell</button>
+                    </div>
+                </div>
+ 
             </div>
         </div>
     </div>
@@ -676,6 +540,7 @@
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
