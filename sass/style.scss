@@ -75,6 +75,10 @@ html {
                             }
                         }
 
+                        .active {
+                            color: $borderGreen !important;
+                        }
+
                         @media screen and (max-width:991px) {
                             margin-top: 15px;
                         }
@@ -86,7 +90,7 @@ html {
                             height: 3px;
                             background: white;
                             transition: width .3s;
-                            margin-top: 20px;
+                            margin-top: 0px;
                         }
 
                         &:hover {
@@ -94,9 +98,13 @@ html {
                                 width: 100%;
                             }
                         }
+
+
                     }
                 }
             }
+
+
 
             .new-nav {
                 position: fixed !important;
@@ -146,17 +154,15 @@ html {
                 z-index: 0;
             }
 
-            .jumbotron {
-                background: transparent;
-                position: absolute;
-                bottom: 110px;
-                color: $white;
+            .carousel-caption {
+                bottom: 32%;
+                text-align: left;
 
                 h1 {
                     color: $white;
                     font-family: $mbold;
-                    max-width: 763px;
                     font-size: 76px;
+                    max-width: 780px;
                     margin-bottom: 60px;
 
                     @media screen and (max-width:480px) {
@@ -176,38 +182,33 @@ html {
                 }
             }
 
-            .banner-header {
-                position: absolute;
-                background-color: $white;
-                bottom: 0;
-                height: 157px;
-                min-width: 1465px;
-                border-top-right-radius: 120px;
-                display: flex;
-                flex-flow: row;
-                align-content: center;
-                align-items: center;
-                webkit-box-shadow: 0px 26px 41px -24px rgba(128, 128, 128, 1);
-                -moz-box-shadow: 0px 26px 41px -24px rgba(128, 128, 128, 1);
-                box-shadow: 0px 26px 41px -24px rgba(128, 128, 128, 1);
-                padding-right: 55px;
-
-                .items {
-                    max-width: 992px;
-
-                    .col-sm-2 {
-                        padding: 0 !important;
-                    }
 
 
-                    h5 {
-                        font-family: $nunitosemiBold;
-                        font-size: 16px;
-                    }
+            .carousel {
+                .carousel-inner {
+                    .carousel-item {
+                        height: 809px;
 
-                    p {
-                        font-size: 13px;
-                        color: $grayP;
+                        img {
+                            height: 100%;
+                            width: 100%;
+                            object-fit: cover;
+                        }
+
+                        .carousel-caption {
+
+
+                            a {
+                                left: 0;
+                                text-align: left;
+
+                                img {
+                                    width: 47px !important;
+                                    height: 47px !important;
+                                    object-fit: none;
+                                }
+                            }
+                        }
                     }
                 }
             }
@@ -964,96 +965,109 @@ html {
                 .routes {
                     margin-top: 110px;
 
-                    .selects-lines{
+                    .selects-lines {
                         margin-top: 69px;
                         padding: 15px;
+
                         h3 {
                             font-family: $rb;
                             font-size: 29px;
-    
+
                         }
+
                         .form-checkbox {
                             display: inline-block;
-                              text-align: left;
-                              
-                            
-                          }
-                          .control {
+                            text-align: left;
+
+
+                        }
+
+                        .control {
                             font-size: 18px;
-                              position: relative;
-                              display: block;
-                              margin-top: 20px;
-                              margin-bottom: 46px;
-                              padding-left: 46px;
-                              cursor: pointer;
-                              line-height: 30px;
-                          }
-                          .control input {
+                            position: relative;
+                            display: block;
+                            margin-top: 20px;
+                            margin-bottom: 46px;
+                            padding-left: 46px;
+                            cursor: pointer;
+                            line-height: 30px;
+                        }
+
+                        .control input {
                             position: absolute;
                             z-index: -1;
                             opacity: 0;
-                          }
-                          .control-indicator {
+                        }
+
+                        .control-indicator {
                             position: absolute;
-                              top: 0px;
-                              left: 0px;
-                              width: 30px;
-                              height: 30px;
-                              background: #fff;
-                              border: solid 1px $graylighter;
-                                    
-                          }
-                          .control-radio .control-indicator {
-                            border-radius: 50%;
-                          }
-                          .control:hover input ~ .control-indicator,
-                          .control input:focus ~ .control-indicator {
+                            top: 0px;
+                            left: 0px;
+                            width: 30px;
+                            height: 30px;
                             background: #fff;
-                          }
-                          .control input:checked ~ .control-indicator {
+                            border: solid 1px $graylighter;
+
+                        }
+
+                        .control-radio .control-indicator {
+                            border-radius: 50%;
+                        }
+
+                        .control:hover input~.control-indicator,
+                        .control input:focus~.control-indicator {
+                            background: #fff;
+                        }
+
+                        .control input:checked~.control-indicator {
                             background: $bluenav;
-                          }
-                          .control:hover input:not([disabled]):checked ~ .control-indicator,
-                          .control input:checked:focus ~ .control-indicator {
+                        }
+
+                        .control:hover input:not([disabled]):checked~.control-indicator,
+                        .control input:checked:focus~.control-indicator {
                             background: $bluenav;
-                          }
-                          .control-indicator:after {
+                        }
+
+                        .control-indicator:after {
                             content: '';
                             position: absolute;
                             display: none;
-                            
-                          }
-                          .control input:checked ~ .control-indicator:after {
+
+                        }
+
+                        .control input:checked~.control-indicator:after {
                             display: block;
-                          }
-                          .checkbox-label .control-indicator:after {
+                        }
+
+                        .checkbox-label .control-indicator:after {
                             left: 9px;
                             top: 4px;
                             width: 9px;
                             height: 19px;
-                            border: solid $white ;
+                            border: solid $white;
                             border-width: 0 3px 3px 0;
                             transform: rotate(45deg);
-                          }
+                        }
 
-                          label{
-                              font-family: $rb;
-                              font-size: 20px;
-                          }
-                          
-                          
-                          .btn{
-                              background: $borderGreen;
-                              width: 80%;
-                              &:hover{
-                                -webkit-box-shadow: 0px 18px 21px -6px rgba(163,163,163,1);
-                                -moz-box-shadow: 0px 18px 21px -6px rgba(163,163,163,1);
-                                box-shadow: 0px 18px 21px -6px rgba(163,163,163,1);
+                        label {
+                            font-family: $rb;
+                            font-size: 20px;
+                        }
+
+
+                        .btn {
+                            background: $borderGreen;
+                            width: 80%;
+
+                            &:hover {
+                                -webkit-box-shadow: 0px 18px 21px -6px rgba(163, 163, 163, 1);
+                                -moz-box-shadow: 0px 18px 21px -6px rgba(163, 163, 163, 1);
+                                box-shadow: 0px 18px 21px -6px rgba(163, 163, 163, 1);
                                 transition: 0.2s;
 
-                              }
-                          }
-                          
+                            }
+                        }
+
                     }
 
                     .btn-excell {
@@ -1079,21 +1093,24 @@ html {
                                 -webkit-box-shadow: 3px 4px 35px -24px rgba(0, 0, 0, 0.75);
                                 -moz-box-shadow: 3px 4px 35px -24px rgba(0, 0, 0, 0.75);
                                 box-shadow: 3px 4px 35px -24px rgba(0, 0, 0, 0.75);
-                                &:hover{
+
+                                &:hover {
                                     background: $bluenav !important;
                                     color: white;
-                                    -webkit-box-shadow:0px 25px 21px -6px rgb(133, 133, 133);
+                                    -webkit-box-shadow: 0px 25px 21px -6px rgb(133, 133, 133);
                                     -moz-box-shadow: 0px 25px 21px -6px rgb(133, 133, 133);
                                     box-shadow: 0px 25px 21px -6px rgb(133, 133, 133);
                                     transition: 0.2s;
                                 }
+
                                 th,
                                 td {
                                     padding-top: 55px;
                                     // border: none;
                                     // border-right: solid 1px $graylighter;
                                     position: relative;
-                                    .divider-top{
+
+                                    .divider-top {
                                         display: none;
                                     }
                                 }
@@ -1104,7 +1121,7 @@ html {
 
                                 th {
                                     border-left: solid 10px $borderGreen !important;
-                                   
+
                                 }
                             }
 

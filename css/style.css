@@ -128,6 +128,9 @@ html body header .navbar ul li a {
 html body header .navbar ul li a:hover {
   color: #A8A8A8 !important;
 }
+html body header .navbar ul li .active {
+  color: #06C37A !important;
+}
 @media screen and (max-width: 991px) {
   html body header .navbar ul li {
     margin-top: 15px;
@@ -140,7 +143,7 @@ html body header .navbar ul li::after {
   height: 3px;
   background: white;
   transition: width 0.3s;
-  margin-top: 20px;
+  margin-top: 0px;
 }
 html body header .navbar ul li:hover::after {
   width: 100%;
@@ -180,62 +183,47 @@ html body header .cabecera-img {
   left: 0;
   z-index: 0;
 }
-html body header .jumbotron {
-  background: transparent;
-  position: absolute;
-  bottom: 110px;
-  color: #fff;
+html body header .carousel-caption {
+  bottom: 32%;
+  text-align: left;
 }
-html body header .jumbotron h1 {
+html body header .carousel-caption h1 {
   color: #fff;
   font-family: metropolis-bold;
-  max-width: 763px;
   font-size: 76px;
+  max-width: 780px;
   margin-bottom: 60px;
 }
 @media screen and (max-width: 480px) {
-  html body header .jumbotron h1 {
+  html body header .carousel-caption h1 {
     font-size: 45px;
     margin-bottom: 120px;
   }
 }
-html body header .jumbotron a {
+html body header .carousel-caption a {
   text-transform: uppercase;
   font-family: nunito-Regular;
   color: #fff !important;
 }
-html body header .jumbotron a img {
+html body header .carousel-caption a img {
   margin-right: 20px !important;
 }
-html body header .banner-header {
-  position: absolute;
-  background-color: #fff;
-  bottom: 0;
-  height: 157px;
-  min-width: 1465px;
-  border-top-right-radius: 120px;
-  display: flex;
-  flex-flow: row;
-  align-content: center;
-  align-items: center;
-  webkit-box-shadow: 0px 26px 41px -24px gray;
-  -moz-box-shadow: 0px 26px 41px -24px gray;
-  box-shadow: 0px 26px 41px -24px gray;
-  padding-right: 55px;
+html body header .carousel .carousel-inner .carousel-item {
+  height: 809px;
 }
-html body header .banner-header .items {
-  max-width: 992px;
+html body header .carousel .carousel-inner .carousel-item img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
-html body header .banner-header .items .col-sm-2 {
-  padding: 0 !important;
+html body header .carousel .carousel-inner .carousel-item .carousel-caption a {
+  left: 0;
+  text-align: left;
 }
-html body header .banner-header .items h5 {
-  font-family: nunito-semiBold;
-  font-size: 16px;
-}
-html body header .banner-header .items p {
-  font-size: 13px;
-  color: #A8A8A8;
+html body header .carousel .carousel-inner .carousel-item .carousel-caption a img {
+  width: 47px !important;
+  height: 47px !important;
+  object-fit: none;
 }
 html body .content .top-content-location {
   display: flex;
