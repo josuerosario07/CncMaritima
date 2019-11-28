@@ -132,123 +132,110 @@
                 <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
                     <form-wizard color="#06C37A">
                         <tab-content title="Personal details">
-                            My first tab content
+                                <form>
+                                    <fieldset disabled>
+                                        <h3>Que quieres hacer?</h3>
+                                        <div class="divider"></div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="disabledTextInput" placeholder="Exportar">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="disabledTextInput" placeholder="Importar">
+                                        </div>
+                                
+                                    </fieldset>
+                                </form>
                         </tab-content>
                         <tab-content title="Additional Info">
-                            My second tab content
+                                                <form>
+                                                    <h3>Salida Y Destino</h3>
+                                                    <div class="divider"></div>
+                                                    <div class="form-group">
+                                                        <select class=" form-control-select">
+                                                            <option>Origen</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group ">
+                                                        <select class=" form-control-select">
+                                                            <option>Destino</option>
+                                                        </select>
+                                                    </div>
+                                                
+                                                </form>
                         </tab-content>
-                        <tab-content title="Last step">
-                            Yuhuuu! This seems pretty damn simple
+                        <tab-content title="Additional Info">
+                                                <form class="forms-lines">
+                                                    <h3>Linea Operadora</h3>
+                                                    <div class="divider"></div>
+                                                    <div class="select-group">
+                                                        <div class="form-group">
+                                                            <select class="form-control">
+                                                                <option>Seleccione na linea operadora</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <select class="form-control">
+                                                                <option>Indica un tipo de carga</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <select class="form-control">
+                                                                <option>Elige el tipo de buque</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control" id="inlineFormInput" placeholder="Elige un agente respresentante">
+                                                    </div>
+                                                    <small> <span class="red-text">*</span> ( Solo padres seleccionar los agentes que presentan la
+                                                        linea seleccionada )
+                                                    </small>
+                                                
+                                                
+                                                
+                                                
+                                                </form>
+                        </tab-content>
+                        <tab-content title="Last Step">
+    <form class=" forms-line-2">
+        <h3>Duracion de trayecto</h3>
+        <div class="divider"></div>
+    
+        <div class="check">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1"
+                    checked>
+                <label class="form-check-label" for="exampleRadios1">
+                    Salida
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1"
+                    checked>
+                <label class="form-check-label" for="exampleRadios1">
+                    Llegada
+                </label>
+            </div>
+        </div>
+        <div class="select-group">
+            <div class="form-group">
+                <select class="form-control">
+                    <option>Seleccione na linea operadora</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <select class="form-control">
+                    <option>Indica un tipo de carga</option>
+                </select>
+            </div>
+        </div>
+    
+        </form>
                         </tab-content>
                     </form-wizard>
-                    <!-- <form>
-                        <fieldset disabled>
-                            <h3>Que quieres hacer?</h3>
-                            <div class="divider"></div>
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="disabledTextInput" placeholder="Exportar">
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="disabledTextInput" placeholder="Importar">
-                            </div>
-
-                        </fieldset>
 
 
-
-                        <button type="submit" class="btn btn-primary">Enviar</button>
-                    </form> -->
-                    <!-- <form>
-                        <h3>Salida Y Destino</h3>
-                        <div class="divider"></div>
-                        <div class="form-group">
-                            <select class=" form-control-select">
-                                <option>Origen</option>
-                            </select>
-                        </div>
-                        <div class="form-group ">
-                            <select class=" form-control-select">
-                                <option>Destino</option>
-                            </select>
-                        </div>
-
-
-
-
-                        <button type="submit" class="btn btn-primary">Enviar</button>
-                    </form> -->
-                    <!-- <form class="forms-lines">
-                        <h3>Linea Operadora</h3>
-                        <div class="divider"></div>
-                        <div class="select-group">
-                            <div class="form-group">
-                                <select class="form-control">
-                                    <option>Seleccione na linea operadora</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <select class="form-control">
-                                    <option>Indica un tipo de carga</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <select class="form-control">
-                                    <option>Elige el tipo de buque</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control" id="inlineFormInput"
-                                placeholder="Elige un agente respresentante">
-                        </div>
-                        <small> <span class="red-text">*</span> ( Solo padres seleccionar los agentes que presentan la
-                            linea seleccionada )
-                        </small>
-
-
-
-
-                        <button type="submit" class="btn btn-primary">Enviar</button>
-                    </form> -->
-                    <!-- <form class=" forms-line-2">
-                        <h3>Duracion de trayecto</h3>
-                        <div class="divider"></div>
-
-                        <div class="check">
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
-                                    value="option1" checked>
-                                <label class="form-check-label" for="exampleRadios1">
-                                    Salida
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
-                                    value="option1" checked>
-                                <label class="form-check-label" for="exampleRadios1">
-                                    Llegada
-                                </label>
-                            </div>
-                        </div>
-                        <div class="select-group">
-                            <div class="form-group">
-                                <select class="form-control">
-                                    <option>Seleccione na linea operadora</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <select class="form-control">
-                                    <option>Indica un tipo de carga</option>
-                                </select>
-                            </div>
-                        </div>
-
-
-
-
-
-                        <button type="submit" class="btn btn-primary">Enviar</button>
-                    </form> -->
+               
                 </div>
 
             </div>

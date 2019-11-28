@@ -343,7 +343,9 @@ fieldset[disabled] .vue-form-wizard .wizard-btn {
 
 .vue-form-wizard .wizard-tab-content {
     min-height: 100px;
-    padding: 30px 20px 10px
+    padding: 30px 20px 10px;
+    margin-top: 80px;
+    margin-bottom: 80px;
 }
 
 .vue-form-wizard .wizard-header {
