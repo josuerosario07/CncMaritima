@@ -89,7 +89,7 @@ html body header .navbar {
   position: absolute;
   top: 0;
   width: 100%;
-  z-index: 2;
+  z-index: 99;
 }
 @media screen and (max-width: 991px) {
   html body header .navbar {
