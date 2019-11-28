@@ -208,6 +208,9 @@ html body header .carousel-caption a {
 html body header .carousel-caption a img {
   margin-right: 20px !important;
 }
+html body header .carousel .carousel-indicators li {
+  width: 100px;
+}
 html body header .carousel .carousel-inner .carousel-item {
   height: 809px;
 }

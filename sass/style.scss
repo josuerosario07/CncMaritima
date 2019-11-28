@@ -185,6 +185,14 @@ html {
 
 
             .carousel {
+                .carousel-indicators {
+
+                    li {
+                        width: 100px;
+
+                    }
+                }
+
                 .carousel-inner {
                     .carousel-item {
                         height: 809px;
