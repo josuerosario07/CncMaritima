@@ -586,6 +586,7 @@ html body footer .father-content-footer .item-logo {
 }
 html body footer .father-content-footer .item-logo .content {
   max-width: 300px;
+  margin-top: 88px;
 }
 html body footer .father-content-footer .item-logo .content p {
   font-family: Raleway-Light;
@@ -1114,6 +1115,20 @@ html body .agentes ul {
   -webkit-box-shadow: 2px 13px 25px -13px #7a7a7a;
   -moz-box-shadow: 2px 13px 25px -13px #7a7a7a;
   box-shadow: 2px 13px 25px -13px #7a7a7a;
+  display: flex;
+  flex-flow: row;
+  flex-direction: row;
+  flex: 1 1 auto;
+}
+@media screen and (max-width: 768px) {
+  html body .agentes ul {
+    padding: 15px !important;
+  }
+}
+@media screen and (max-width: 480px) {
+  html body .agentes ul {
+    justify-content: space-around;
+  }
 }
 html body .agentes ul li {
   display: flex;
@@ -1121,9 +1136,16 @@ html body .agentes ul li {
   align-items: flex-start;
   font-size: 16px;
 }
+@media screen and (max-width: 480px) {
+  html body .agentes ul li img, html body .agentes ul li span {
+    display: none;
+  }
+}
 html body .agentes ul li .father {
   display: flex;
   flex-flow: row;
+  flex-direction: row;
+  flex: 1 1 auto;
   align-items: flex-start;
 }
 html body .agentes ul li a {
@@ -1140,6 +1162,14 @@ html body .agentes ul li a::after {
   background: #06C37A;
   transition: width 0.3s;
   margin-top: 20px;
+}
+@media screen and (max-width: 480px) {
+  html body .agentes ul li a {
+    font-size: 13px;
+    margin: 0;
+    text-align: center;
+    margin-top: 10px;
+  }
 }
 html body .agentes ul li span {
   font-size: 13px;
@@ -1158,6 +1188,11 @@ html body .agentes .tab-content {
 html body .agentes .tab-content .title h1 {
   font-family: Raleway-bold;
   color: #004B8D;
+}
+@media screen and (max-width: 480px) {
+  html body .agentes .tab-content .title h1 {
+    font-size: 25px;
+  }
 }
 html body .agentes .tab-content .title p {
   max-width: 800px;
@@ -1189,6 +1224,9 @@ html body .agentes .tab-content .item-card .header-card h3 {
   max-width: 200px;
   margin-left: 20px;
 }
+html body .agentes .tab-content .item-card .text-card p {
+  height: 97px;
+}
 html body .agentes .tab-content .item-card .contact-card {
   margin-top: 64px;
 }
@@ -1198,6 +1236,11 @@ html body .agentes .tab-content .item-card .contact-card a {
 }
 html body .agentes .tab-content .item-card .contact-card a img {
   margin-right: 10px;
+}
+@media screen and (max-width: 768px) {
+  html body .agentes .tab-content .item-card .contact-card a {
+    font-size: 12px;
+  }
 }
 html body .boucer {
   max-width: 1600px;

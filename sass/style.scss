@@ -608,6 +608,7 @@ html {
 
                     .content {
                         max-width: 300px;
+                        margin-top: 88px;
 
                         p {
                             font-family: $rl;
@@ -1235,6 +1236,14 @@ html {
                 -webkit-box-shadow: 2px 13px 25px -13px rgba(122, 122, 122, 1);
                 -moz-box-shadow: 2px 13px 25px -13px rgba(122, 122, 122, 1);
                 box-shadow: 2px 13px 25px -13px rgba(122, 122, 122, 1);
+                @include FlexRow;
+                @media screen and (max-width:768px){
+                    padding: 15px !important;
+                }
+                @media screen and (max-width:480px){
+                    justify-content: space-around;
+                }
+                
 
                 li {
                     display: flex;
@@ -1242,9 +1251,17 @@ html {
                     align-items: flex-start;
                     font-size: 16px;
 
+                    
+                        @media screen and (max-width:480px){
+                           img, span{
+                                display: none;
+                           }
+
+                }
+                    
+                    
                     .father {
-                        display: flex;
-                        flex-flow: row;
+                        @include FlexRow;
                         align-items: flex-start;
                     }
 
@@ -1265,6 +1282,13 @@ html {
                             transition: width .3s;
                             margin-top: 20px;
                         }
+                          @media screen and (max-width:480px){
+                           font-size: 13px;
+                           margin: 0;
+                           text-align: center;
+                           margin-top: 10px;
+                    }
+                        
                     }
 
                     span {
@@ -1293,6 +1317,9 @@ html {
                     h1 {
                         font-family: $rb;
                         color: $bluenav;
+                        @media screen and (max-width:480px){
+                    font-size: 25px;
+                }
                     }
 
                     p {
@@ -1330,6 +1357,12 @@ html {
                         }
                     }
 
+                    .text-card{
+                        p{
+                            height: 97px;
+                        }
+                    }
+
                     .contact-card {
                         margin-top: 64px;
 
@@ -1339,6 +1372,9 @@ html {
 
                             img {
                                 margin-right: 10px;
+                            }
+                            @media screen and (max-width:768px){
+                                font-size: 12px;
                             }
                         }
                     }
