@@ -81,6 +81,11 @@ html body header {
   min-height: 809px;
   position: relative;
 }
+@media screen and (max-width: 480px) {
+  html body header {
+    min-height: 500px;
+  }
+}
 html body header .navbar {
   transition: 0.3s ease-in-out;
   padding-top: 20px;
@@ -150,6 +155,7 @@ html body header .navbar ul li:hover::after {
 }
 html body header .new-nav {
   position: fixed !important;
+  z-index: 101;
   top: 0;
   padding-top: 20px;
   background-color: #fff !important;
@@ -187,6 +193,11 @@ html body header .carousel-caption {
   bottom: 32%;
   text-align: left;
 }
+@media screen and (max-width: 480px) {
+  html body header .carousel-caption {
+    bottom: 15%;
+  }
+}
 html body header .carousel-caption h1 {
   color: #fff;
   font-family: metropolis-bold;
@@ -196,8 +207,8 @@ html body header .carousel-caption h1 {
 }
 @media screen and (max-width: 480px) {
   html body header .carousel-caption h1 {
-    font-size: 45px;
-    margin-bottom: 120px;
+    font-size: 40px;
+    margin-bottom: 20px;
   }
 }
 html body header .carousel-caption a {
@@ -208,16 +219,43 @@ html body header .carousel-caption a {
 html body header .carousel-caption a img {
   margin-right: 20px !important;
 }
+@media screen and (max-width: 480px) {
+  html body header .carousel-caption a {
+    font-size: 14px;
+  }
+}
 html body header .carousel .carousel-indicators li {
   width: 100px;
 }
+html body header .carousel .carousel-control-next, html body header .carousel .carousel-control-prev {
+  z-index: 4;
+}
 html body header .carousel .carousel-inner .carousel-item {
   height: 809px;
+}
+html body header .carousel .carousel-inner .carousel-item .shadow-bg {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.575);
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+@media screen and (max-width: 480px) {
+  html body header .carousel .carousel-inner .carousel-item {
+    height: 500px;
+  }
 }
 html body header .carousel .carousel-inner .carousel-item img {
   height: 100%;
   width: 100%;
   object-fit: cover;
+  position: relative;
+}
+html body header .carousel .carousel-inner .carousel-item .carousel-caption {
+  z-index: 99;
 }
 html body header .carousel .carousel-inner .carousel-item .carousel-caption a {
   left: 0;
@@ -227,6 +265,13 @@ html body header .carousel .carousel-inner .carousel-item .carousel-caption a im
   width: 47px !important;
   height: 47px !important;
   object-fit: none;
+}
+@media screen and (max-width: 480px) {
+  html body header .carousel .carousel-inner .carousel-item .carousel-caption a img {
+    width: 37px !important;
+    height: 37px !important;
+    object-fit: contain;
+  }
 }
 html body .content .top-content-location {
   display: flex;
@@ -249,6 +294,14 @@ html body .content .top-content-location .title img {
 }
 html body .content .top-content-location .title p {
   margin-top: 10px;
+}
+@media screen and (max-width: 480px) {
+  html body .content .top-content-location .title h3 {
+    font-size: 25px;
+  }
+  html body .content .top-content-location .title img {
+    display: none;
+  }
 }
 html body .content .top-content-location .resume {
   margin-top: 30px;
@@ -346,7 +399,7 @@ html body .content .maps-location ul li .active-indicator img {
 html body .content .maps-location ul li .divider {
   background: #95989A;
   height: 1px;
-  width: 200px !important;
+  width: 90% !important;
   margin-left: 20px;
 }
 @media screen and (max-width: 1025px) {
@@ -369,7 +422,7 @@ html body .docs-info .sub-title {
 }
 html body .docs-info .content {
   max-width: 398px !important;
-  margin-top: 90px;
+  margin-top: 52px;
 }
 html body .docs-info .content .top {
   height: 403px;
@@ -383,7 +436,7 @@ html body .docs-info .content .top img {
 html body .docs-info .content p {
   font-family: Raleway-med;
   font-size: 27px;
-  margin-top: 30px;
+  margin-top: 7px;
   height: 90px;
 }
 @media screen and (min-width: 1400px) {
@@ -404,6 +457,20 @@ html body .docs-info .content .btn {
 @media screen and (min-width: 1400px) {
   html body .docs-info .content .btn {
     margin-top: 20px;
+  }
+}
+@media screen and (max-width: 480px) {
+  html body .docs-info .content .btn {
+    display: block;
+    margin: 20px auto;
+    width: 80%;
+    font-size: 14px;
+    min-height: 47px;
+  }
+}
+@media screen and (max-width: 480px) {
+  html body .docs-info {
+    margin-top: 70px;
   }
 }
 html body .opinions {
@@ -613,6 +680,7 @@ html body footer .copy h4 {
 html body .tabs {
   width: 100%;
   position: relative;
+  z-index: 5;
 }
 html body .tabs .nav-pills {
   justify-content: space-between;
@@ -1032,6 +1100,10 @@ html body .route-traffic .container .routes .table-striped tbody tr:nth-of-type(
 html body .route-traffic .container .routes .table-striped tbody tr:nth-of-type(odd) th {
   border-left: none !important;
 }
+html body .agentes {
+  position: relative;
+  z-index: 5;
+}
 html body .agentes ul {
   justify-content: space-between;
   max-width: 1100px;
@@ -1213,6 +1285,10 @@ html body .boucer .all-items .boucher-route .footer h1 {
   font-family: Raleway-med;
   color: #ED1C24;
   font-size: 35px;
+}
+
+.nopad {
+  padding: 0px;
 }
 
 /*# sourceMappingURL=style.css.map */

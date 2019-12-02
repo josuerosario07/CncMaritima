@@ -6,6 +6,9 @@ $(window).scroll(function () {
     } else {
         $(".navbar").removeClass("new-nav");
     }
+
+
+
 });
 
 

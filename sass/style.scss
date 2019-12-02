@@ -21,6 +21,9 @@ html {
         header {
             min-height: 809px;
             position: relative;
+             @media screen and (max-width:480px) {
+                        min-height: 500px;
+                    }
 
             .navbar {
                 transition: 0.3s ease-in-out;
@@ -108,6 +111,7 @@ html {
 
             .new-nav {
                 position: fixed !important;
+                z-index: 101;
                 top: 0;
                 padding-top: 20px;
                 background-color: $white !important;
@@ -157,6 +161,9 @@ html {
             .carousel-caption {
                 bottom: 32%;
                 text-align: left;
+                 @media screen and (max-width:480px) {
+                        bottom: 15%;
+                    }
 
                 h1 {
                     color: $white;
@@ -166,8 +173,8 @@ html {
                     margin-bottom: 60px;
 
                     @media screen and (max-width:480px) {
-                        font-size: 45px;
-                        margin-bottom: 120px;
+                        font-size: 40px;
+                        margin-bottom: 20px;
                     }
                 }
 
@@ -178,6 +185,9 @@ html {
 
                     img {
                         margin-right: 20px !important;
+                    }
+                    @media screen and (max-width:480px) {
+                        font-size: 14px;
                     }
                 }
             }
@@ -193,18 +203,38 @@ html {
                     }
                 }
 
+                .carousel-control-next, .carousel-control-prev{
+                    z-index: 4;
+                }
+
                 .carousel-inner {
                     .carousel-item {
                         height: 809px;
+                        .shadow-bg{
+                            width: 100%;
+                            height: 100%;
+                            background-color: rgba(0, 0, 0, 0.575);
+                            opacity: 1;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            z-index: 2;
+
+
+                        }
+                         @media screen and (max-width:480px) {
+                            height: 500px;
+                    }
 
                         img {
                             height: 100%;
                             width: 100%;
                             object-fit: cover;
+                            position: relative;
                         }
 
                         .carousel-caption {
-
+                            z-index: 99;
 
                             a {
                                 left: 0;
@@ -214,6 +244,12 @@ html {
                                     width: 47px !important;
                                     height: 47px !important;
                                     object-fit: none;
+                                    @media screen and(max-width:480px) {
+                                        width: 37px !important;
+                                    height: 37px !important;
+                                    object-fit: contain;
+                           
+                                         }
                                 }
                             }
                         }
@@ -240,14 +276,25 @@ html {
                     h3 {
                         font-size: 30px;
                         font-family: $mbold;
+                        
                     }
 
                     img {
                         margin-right: 20px;
+                        
                     }
 
                     p {
                         margin-top: 10px;
+                    }
+                     @media screen and (max-width:480px) {
+                           h3{
+                               font-size: 25px;
+                           }
+                           img{
+                               display: none;
+                               
+                           }
                     }
                 }
 
@@ -366,7 +413,7 @@ html {
                         .divider {
                             background: $bordeColor;
                             height: 1px;
-                            width: 200px !important;
+                            width: 90% !important;
                             margin-left: 20px;
 
                             @media screen and (max-width:1025px) {
@@ -381,6 +428,7 @@ html {
 
         .docs-info {
             margin-top: 160px;
+            
 
             h2 {
                 margin-bottom: 0px;
@@ -396,7 +444,7 @@ html {
 
             .content {
                 max-width: 398px !important;
-                margin-top: 90px;
+                margin-top: 52px;
 
                 .top {
                     height: 403px;
@@ -414,7 +462,7 @@ html {
                 p {
                     font-family: $rm;
                     font-size: 27px;
-                    margin-top: 30px;
+                    margin-top: 7px;
                     height: 90px;
 
                     @media screen and (min-width:1400px) {
@@ -435,9 +483,21 @@ html {
                     @media screen and (min-width:1400px) {
                         margin-top: 20px;
                     }
+
+                    @media screen and (max-width:480px) {
+                                display: block;
+                                margin: 20px auto;
+                                width: 80%;
+                                font-size: 14px;
+                                min-height: 47px;
+                            }
                 }
 
             }
+
+            @media screen and (max-width:480px) {
+                                margin-top: 70px;
+                            }
 
 
         }
@@ -653,7 +713,7 @@ html {
         .tabs {
             width: 100%;
             position: relative;
-
+            z-index: 5;
 
             .nav-pills {
 
@@ -1162,6 +1222,8 @@ html {
         }
 
         .agentes {
+            position: relative;
+            z-index: 5;
             ul {
 
                 justify-content: space-between;
@@ -1365,4 +1427,8 @@ html {
 
         }
     }
+}
+
+.nopad{
+    padding: $nopad;
 }
