@@ -1413,6 +1413,9 @@ html {
                         width: 100%;
                         justify-content: space-between;
                         padding: 38px 53px;
+                        @media screen and (max-width:768px){
+                            @include flexColum;
+                        }
                     }
                     .head{
                         .items{
@@ -1423,6 +1426,9 @@ html {
                             &:last-child{
                                 border-right: none;
                             }
+                            @media screen and (max-width:768px){
+                            border-right: none;
+                        }
 
                         }
                         background-color: $bluenav;
@@ -1436,6 +1442,14 @@ html {
                         h1{
                             font-family: $rb;
                             font-size: 80px;
+                            @media screen and (max-width:991px) {
+                                
+                                    font-size: 30px !important;
+                                
+                        }
+                        }
+                        @media screen and (max-width:768px){
+                            text-align: center;
                         }
                     }
                     .footer{
@@ -1450,6 +1464,11 @@ html {
                             &:last-child{
                                 border-right: none;
                             }
+                            @media screen and (max-width:768px){
+                            max-width: 100%;
+                            border-right: none;
+                            text-align: center;
+                        }
                         }
                         h5{
                             font-family: $rm;
@@ -1460,6 +1479,11 @@ html {
                             font-family: $rm;
                             color: $rednav;
                             font-size: 35px;
+                        }
+                        @media screen and (max-width:1300px) {
+                                h1{
+                                    font-size: 20px !important;
+                                } 
                         }
                     }
 
