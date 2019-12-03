@@ -260,13 +260,13 @@ html {
 
         .content {
 
-
+            margin-top: 150px;
             .top-content-location {
                 display: flex;
                 flex-flow: column;
                 flex-direction: column;
-                margin-top: 86px;
                 max-width: 844px;
+                padding-right: 20px;
 
                 .title {
                     display: flex;
@@ -274,7 +274,7 @@ html {
                     align-items: center;
 
                     h3 {
-                        font-size: 30px;
+                        font-size: 25px;
                         font-family: $mbold;
                         
                     }
@@ -284,9 +284,7 @@ html {
                         
                     }
 
-                    p {
-                        margin-top: 10px;
-                    }
+                    
                      @media screen and (max-width:480px) {
                            h3{
                                font-size: 25px;
@@ -295,6 +293,12 @@ html {
                                display: none;
                                
                            }
+                    }
+                }
+                .resume{
+                    p {
+                        margin-top: 10px;
+                        text-align: justify;
                     }
                 }
 
@@ -319,7 +323,8 @@ html {
                 }
 
                 ul {
-                    margin-top: 75px;
+                    margin-top: 45px;
+                    padding-left: 0;
 
                     @media screen and (max-width:991px) {
                         padding-left: 0;
