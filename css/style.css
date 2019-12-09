@@ -203,7 +203,6 @@ html body header .carousel-caption h1 {
   font-family: metropolis-bold;
   font-size: 76px;
   max-width: 780px;
-  margin-bottom: 60px;
 }
 @media screen and (max-width: 480px) {
   html body header .carousel-caption h1 {
@@ -257,6 +256,9 @@ html body header .carousel .carousel-inner .carousel-item img {
 }
 html body header .carousel .carousel-inner .carousel-item .carousel-caption {
   z-index: 99;
+}
+html body header .carousel .carousel-inner .carousel-item .carousel-caption p {
+  max-width: 800px;
 }
 html body header .carousel .carousel-inner .carousel-item .carousel-caption a {
   left: 0;
