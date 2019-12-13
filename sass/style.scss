@@ -921,14 +921,7 @@ html {
                 -webkit-box-shadow: 3px 4px 35px -24px rgba(0, 0, 0, 0.75);
                 -moz-box-shadow: 3px 4px 35px -24px rgba(0, 0, 0, 0.75);
                 box-shadow: 3px 4px 35px -24px rgba(0, 0, 0, 0.75);
-                &:hover {
-                  background: $bluenav !important;
-                  color: white;
-                  -webkit-box-shadow: 0px 25px 21px -6px rgb(133, 133, 133);
-                  -moz-box-shadow: 0px 25px 21px -6px rgb(133, 133, 133);
-                  box-shadow: 0px 25px 21px -6px rgb(133, 133, 133);
-                  transition: 0.2s;
-                }
+
                 th,
                 td {
                   padding-top: 55px;
@@ -938,12 +931,34 @@ html {
                   .divider-top {
                     display: none;
                   }
+                  font-family: Arial, Helvetica, sans-serif;
+                  font-weight: bold;
+                  span {
+                    font-family: $rm !important;
+                    font-weight: lighter !important;
+                    color: black;
+                  }
                 }
                 .escalas {
                   max-width: 170px;
                 }
                 th {
                   border-left: solid 10px $borderGreen !important;
+                  .title {
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-weight: bold;
+                  }
+                }
+                &:hover {
+                  background: $bluenav !important;
+                  color: white !important;
+                  -webkit-box-shadow: 0px 25px 21px -6px rgb(133, 133, 133);
+                  -moz-box-shadow: 0px 25px 21px -6px rgb(133, 133, 133);
+                  box-shadow: 0px 25px 21px -6px rgb(133, 133, 133);
+                  transition: 0.2s;
+                  span {
+                    color: $white;
+                  }
                 }
               }
             }

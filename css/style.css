@@ -1075,28 +1075,43 @@ html body .route-traffic .container .routes .table tbody tr {
   -moz-box-shadow: 3px 4px 35px -24px rgba(0, 0, 0, 0.75);
   box-shadow: 3px 4px 35px -24px rgba(0, 0, 0, 0.75);
 }
-html body .route-traffic .container .routes .table tbody tr:hover {
-  background: #004B8D !important;
-  color: white;
-  -webkit-box-shadow: 0px 25px 21px -6px #858585;
-  -moz-box-shadow: 0px 25px 21px -6px #858585;
-  box-shadow: 0px 25px 21px -6px #858585;
-  transition: 0.2s;
-}
 html body .route-traffic .container .routes .table tbody tr th,
 html body .route-traffic .container .routes .table tbody tr td {
   padding-top: 55px;
   position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
 }
 html body .route-traffic .container .routes .table tbody tr th .divider-top,
 html body .route-traffic .container .routes .table tbody tr td .divider-top {
   display: none;
+}
+html body .route-traffic .container .routes .table tbody tr th span,
+html body .route-traffic .container .routes .table tbody tr td span {
+  font-family: Raleway-med !important;
+  font-weight: lighter !important;
+  color: black;
 }
 html body .route-traffic .container .routes .table tbody tr .escalas {
   max-width: 170px;
 }
 html body .route-traffic .container .routes .table tbody tr th {
   border-left: solid 10px #06C37A !important;
+}
+html body .route-traffic .container .routes .table tbody tr th .title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+html body .route-traffic .container .routes .table tbody tr:hover {
+  background: #004B8D !important;
+  color: white !important;
+  -webkit-box-shadow: 0px 25px 21px -6px #858585;
+  -moz-box-shadow: 0px 25px 21px -6px #858585;
+  box-shadow: 0px 25px 21px -6px #858585;
+  transition: 0.2s;
+}
+html body .route-traffic .container .routes .table tbody tr:hover span {
+  color: #fff;
 }
 html body .route-traffic .container .routes .table .btn {
   min-width: 158px;
