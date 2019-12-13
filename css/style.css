@@ -190,7 +190,7 @@ html body header .cabecera-img {
   z-index: 0;
 }
 html body header .carousel-caption {
-  bottom: 32%;
+  bottom: 17%;
   text-align: left;
 }
 @media screen and (max-width: 480px) {
@@ -206,7 +206,14 @@ html body header .carousel-caption h1 {
 }
 @media screen and (max-width: 480px) {
   html body header .carousel-caption h1 {
-    font-size: 40px;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 480px) {
+  html body header .carousel-caption p {
+    text-align: justify;
     margin-bottom: 20px;
   }
 }
@@ -245,7 +252,7 @@ html body header .carousel .carousel-inner .carousel-item .shadow-bg {
 }
 @media screen and (max-width: 480px) {
   html body header .carousel .carousel-inner .carousel-item {
-    height: 500px;
+    height: 800px;
   }
 }
 html body header .carousel .carousel-inner .carousel-item img {
