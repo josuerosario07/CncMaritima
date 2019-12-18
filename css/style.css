@@ -1258,6 +1258,15 @@ html body .agentes .tab-content .item-card .header-card h3 {
 html body .agentes .tab-content .item-card .text-card {
   height: 97px;
 }
+html body .agentes .tab-content .item-card .text-card .btn {
+  background: transparent;
+  color: #004B8D;
+  border-radius: 0 !important;
+}
+html body .agentes .tab-content .item-card .text-card .btn:hover {
+  background: #004B8D;
+  color: white;
+}
 html body .agentes .tab-content .item-card .contact-card {
   margin-top: 64px;
 }
@@ -1395,6 +1404,47 @@ html body .boucer .all-items .boucher-route .footer h1 {
 @media screen and (max-width: 1300px) {
   html body .boucer .all-items .boucher-route .footer h1 {
     font-size: 20px !important;
+  }
+}
+html body .modal .item-card {
+  width: 100%;
+  background: white;
+  padding: 23px;
+  min-height: 364px;
+}
+html body .modal .item-card .header-card {
+  display: flex;
+  flex-flow: row;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+html body .modal .item-card .header-card img {
+  width: 80px;
+  height: 80px;
+}
+html body .modal .item-card .header-card h3 {
+  font-size: 20px;
+  color: #ED1C24;
+  font-family: Raleway-bold;
+  max-width: 200px;
+  margin-left: 20px;
+}
+html body .modal .item-card .text-card {
+  height: 97px;
+}
+html body .modal .item-card .contact-card {
+  margin-top: 64px;
+}
+html body .modal .item-card .contact-card a {
+  margin-right: 20px;
+  font-size: 16px;
+}
+html body .modal .item-card .contact-card a img {
+  margin-right: 10px;
+}
+@media screen and (max-width: 768px) {
+  html body .modal .item-card .contact-card a {
+    font-size: 12px;
   }
 }
 
