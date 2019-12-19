@@ -818,6 +818,11 @@ html body {
           transition: 0.2s; }
           html body .route-traffic .container .routes .btn-search:hover {
             transform: scale(1.1); }
+        html body .route-traffic .container .routes .not-found {
+          font-size: 55px;
+          font-family: metropolis-bold;
+          color: black;
+          margin-top: 100px; }
         html body .route-traffic .container .routes .table {
           border-collapse: separate;
           border-spacing: 0 40px;

@@ -920,6 +920,12 @@ html {
               transform: scale(1.1);
             }
           }
+          .not-found{
+            font-size: 55px;
+            font-family: $mbold;
+            color: black;
+            margin-top: 100px;
+          }
           .table {
             border-collapse: separate;
             border-spacing: 0 40px;
