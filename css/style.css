@@ -1061,6 +1061,24 @@ html body .route-traffic .container .routes .btn-excell {
   color: white;
   font-size: 18px;
 }
+html body .route-traffic .container .routes .btn-search {
+  min-width: 158px;
+  min-height: 37px;
+  padding: 10px 34px;
+  background: #004B8D;
+  color: white;
+  font-size: 18px;
+  transition: 0.2s;
+}
+html body .route-traffic .container .routes .btn-search:hover {
+  transform: scale(1.1);
+}
+html body .route-traffic .container .routes .not-found {
+  font-size: 55px;
+  font-family: metropolis-bold;
+  color: black;
+  margin-top: 100px;
+}
 html body .route-traffic .container .routes .table {
   border-collapse: separate;
   border-spacing: 0 40px;
