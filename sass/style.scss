@@ -1084,6 +1084,8 @@ html {
             img {
               width: 80px;
               height: 80px;
+              border: solid 1.5px rgb(196, 196, 196);
+              object-fit: contain;
             }
             h3 {
               font-size: 20px;
