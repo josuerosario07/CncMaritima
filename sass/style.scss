@@ -121,8 +121,14 @@ html {
         z-index: 0;
       }
       .carousel-caption {
-        bottom: 17%;
+        bottom: 4%;
         text-align: left;
+        @media screen and (max-width: 991px) {
+          bottom: 13%;
+        }
+        @media screen and (max-width: 768px) {
+          bottom: 7%;
+        }
         @media screen and (max-width: 480px) {
           bottom: 15%;
         }
@@ -131,6 +137,9 @@ html {
           font-family: $mbold;
           font-size: 76px;
           max-width: 780px;
+          @media screen and (max-width: 991px) {
+            font-size: 55px;
+          }
           @media screen and (max-width: 480px) {
             font-size: 30px;
             text-align: center;
@@ -152,6 +161,17 @@ html {
           }
           @media screen and (max-width: 480px) {
             font-size: 14px;
+          }
+        }
+        .logo-banner {
+          width: 400px;
+          display: block;
+          margin-left: auto;
+          @media screen and (max-width: 991px) {
+            margin: 40px auto !important;
+          }
+          @media screen and (max-width: 768px) {
+            width: 100%;
           }
         }
       }
@@ -178,9 +198,10 @@ html {
               left: 0;
               z-index: 2;
             }
-            @media screen and (max-width: 480px) {
-              height: 800px;
+            @media screen and (max-width: 991px) {
+              height: 1000px;
             }
+
             img {
               height: 100%;
               width: 100%;

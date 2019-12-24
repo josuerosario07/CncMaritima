@@ -64,7 +64,7 @@
   src: url(../assets/fonts/Raleway-Regular.ttf);
 }
 html body {
-  background: #f6f8f9;
+  background: #F6F8F9;
   font-family: Raleway-regular;
 }
 @media screen and (min-width: 1400px) {
@@ -131,10 +131,10 @@ html body header .navbar ul li a {
   font-family: Raleway-med;
 }
 html body header .navbar ul li a:hover {
-  color: #a8a8a8 !important;
+  color: #A8A8A8 !important;
 }
 html body header .navbar ul li .active {
-  color: #06c37a !important;
+  color: #06C37A !important;
 }
 @media screen and (max-width: 991px) {
   html body header .navbar ul li {
@@ -168,10 +168,10 @@ html body header .new-nav ul li a {
   color: black !important;
 }
 html body header .new-nav ul li a:hover {
-  color: #004b8d !important;
+  color: #004B8D !important;
 }
 html body header .new-nav ul li::after {
-  background: #06c37a;
+  background: #06C37A;
 }
 html body header .new-nav .logo-white {
   display: none;
@@ -190,8 +190,18 @@ html body header .cabecera-img {
   z-index: 0;
 }
 html body header .carousel-caption {
-  bottom: 17%;
+  bottom: 4%;
   text-align: left;
+}
+@media screen and (max-width: 991px) {
+  html body header .carousel-caption {
+    bottom: 13%;
+  }
+}
+@media screen and (max-width: 768px) {
+  html body header .carousel-caption {
+    bottom: 7%;
+  }
 }
 @media screen and (max-width: 480px) {
   html body header .carousel-caption {
@@ -203,6 +213,11 @@ html body header .carousel-caption h1 {
   font-family: metropolis-bold;
   font-size: 76px;
   max-width: 780px;
+}
+@media screen and (max-width: 991px) {
+  html body header .carousel-caption h1 {
+    font-size: 55px;
+  }
 }
 @media screen and (max-width: 480px) {
   html body header .carousel-caption h1 {
@@ -230,6 +245,21 @@ html body header .carousel-caption a img {
     font-size: 14px;
   }
 }
+html body header .carousel-caption .logo-banner {
+  width: 400px;
+  display: block;
+  margin-left: auto;
+}
+@media screen and (max-width: 991px) {
+  html body header .carousel-caption .logo-banner {
+    margin: 40px auto !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  html body header .carousel-caption .logo-banner {
+    width: 100%;
+  }
+}
 html body header .carousel .carousel-indicators li {
   width: 100px;
 }
@@ -250,9 +280,9 @@ html body header .carousel .carousel-inner .carousel-item .shadow-bg {
   left: 0;
   z-index: 2;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 991px) {
   html body header .carousel .carousel-inner .carousel-item {
-    height: 800px;
+    height: 1000px;
   }
 }
 html body header .carousel .carousel-inner .carousel-item img {
@@ -271,29 +301,13 @@ html body header .carousel .carousel-inner .carousel-item .carousel-caption a {
   left: 0;
   text-align: left;
 }
-html
-  body
-  header
-  .carousel
-  .carousel-inner
-  .carousel-item
-  .carousel-caption
-  a
-  img {
+html body header .carousel .carousel-inner .carousel-item .carousel-caption a img {
   width: 47px !important;
   height: 47px !important;
   object-fit: none;
 }
 @media screen and (max-width: 480px) {
-  html
-    body
-    header
-    .carousel
-    .carousel-inner
-    .carousel-item
-    .carousel-caption
-    a
-    img {
+  html body header .carousel .carousel-inner .carousel-item .carousel-caption a img {
     width: 37px !important;
     height: 37px !important;
     object-fit: contain;
@@ -386,7 +400,7 @@ html body .content .maps-location ul li .location div .info {
   transition: 0.5s all ease-in-out;
 }
 html body .content .maps-location ul li .location div .info h3 {
-  color: #95989a;
+  color: #95989A;
   font-size: 25px;
   font-family: nunito-Regular;
 }
@@ -408,11 +422,11 @@ html body .content .maps-location ul li .location div .info h3 img {
 }
 html body .content .maps-location ul li .location div .info p {
   font-size: 20px;
-  color: #a8a8a8;
+  color: #A8A8A8;
   margin-top: -5px;
 }
 html body .content .maps-location ul li .location div .info:hover h3 {
-  color: #004b8d !important;
+  color: #004B8D !important;
 }
 html body .content .maps-location ul li .location img {
   height: 100%;
@@ -420,7 +434,7 @@ html body .content .maps-location ul li .location img {
 }
 html body .content .maps-location ul li .active-indicator {
   font-family: nunito-semiBold !important;
-  color: #004b8d !important;
+  color: #004B8D !important;
 }
 html body .content .maps-location ul li .active-indicator img {
   opacity: 1 !important;
@@ -428,7 +442,7 @@ html body .content .maps-location ul li .active-indicator img {
   position: relative !important;
 }
 html body .content .maps-location ul li .divider {
-  background: #95989a;
+  background: #95989A;
   height: 1px;
   width: 90% !important;
   margin-left: 20px;
@@ -481,7 +495,7 @@ html body .docs-info .content .btn {
   margin-top: 50px;
   font-size: 18px;
   font-family: Raleway-bold;
-  background: #004b8d;
+  background: #004B8D;
   border-radius: 35px;
   text-transform: uppercase;
 }
@@ -540,7 +554,7 @@ html body .opinions .btn {
   width: 250px;
   height: 58px;
   border-radius: 30px;
-  background: #004b8d;
+  background: #004B8D;
   font-size: 18px;
   border: none;
   text-transform: uppercase;
@@ -621,7 +635,7 @@ html body footer .father-content-footer .item-logo .content {
 }
 html body footer .father-content-footer .item-logo .content p {
   font-family: Raleway-Light;
-  color: #a8a8a8;
+  color: #A8A8A8;
   font-size: 12px;
 }
 html body footer .father-content-footer .links {
@@ -678,13 +692,7 @@ html body footer .father-content-footer .links .direct-links .item-link {
     text-align: center;
   }
 }
-html
-  body
-  footer
-  .father-content-footer
-  .links
-  .direct-links
-  .item-link:last-child {
+html body footer .father-content-footer .links .direct-links .item-link:last-child {
   margin-right: 0;
 }
 html body footer .father-content-footer .links .direct-links .item-link ul {
@@ -695,32 +703,14 @@ html body footer .father-content-footer .links .direct-links .item-link ul li {
   list-style-type: none;
   margin-bottom: 20px;
 }
-html
-  body
-  footer
-  .father-content-footer
-  .links
-  .direct-links
-  .item-link
-  ul
-  li
-  a {
+html body footer .father-content-footer .links .direct-links .item-link ul li a {
   color: #676767;
   text-transform: capitalize !important;
   text-decoration: none;
   font-size: 15px;
 }
-html
-  body
-  footer
-  .father-content-footer
-  .links
-  .direct-links
-  .item-link
-  ul
-  li
-  a:hover {
-  color: #004b8d;
+html body footer .father-content-footer .links .direct-links .item-link ul li a:hover {
+  color: #004B8D;
   transition: 0.2s;
 }
 html body footer .copy {
@@ -815,7 +805,7 @@ html body .tabs .nav-pills li a::after {
   display: block;
   width: 0;
   height: 3px;
-  background: #06c37a;
+  background: #06C37A;
   transition: width 0.3s;
   margin-top: 20px;
 }
@@ -831,7 +821,7 @@ html body .tabs .nav-pills li a::after {
 }
 html body .tabs .nav-pills li span {
   font-size: 13px;
-  color: #a8a8a8;
+  color: #A8A8A8;
 }
 @media screen and (max-width: 636px) {
   html body .tabs .nav-pills li span {
@@ -860,7 +850,7 @@ html body .tabs .tab-pane form {
   -moz-box-shadow: 0px 0px 97px -11px rgba(0, 0, 0, 0.25);
   box-shadow: 0px 0px 97px -11px rgba(0, 0, 0, 0.25);
   position: relative;
-  color: #a8a8a8;
+  color: #A8A8A8;
 }
 html body .tabs .tab-pane form h3 {
   font-family: Raleway-med;
@@ -876,21 +866,21 @@ html body .tabs .tab-pane form .form-control {
   height: 60px;
   border: solid 1px #d8d6d6;
   margin: 25px 0;
-  border-left: 14px solid #004b8d;
+  border-left: 14px solid #004B8D;
   background: #fff !important;
   padding-left: 30px;
   border-radius: 0 !important;
-  color: #a8a8a8;
+  color: #A8A8A8;
 }
 html body .tabs .tab-pane form .form-control-select {
   height: 60px;
   border: solid 1px #d8d6d6;
   border-radius: 0 !important;
-  border-left: 14px solid #004b8d;
+  border-left: 14px solid #004B8D;
   background: #fff !important;
   padding-left: 50px;
   width: 100%;
-  color: #a8a8a8;
+  color: #A8A8A8;
 }
 html body .tabs .tab-pane form .btn {
   display: block;
@@ -931,7 +921,7 @@ html body .tabs .tab-pane .forms-lines .select-group .form-group .form-control {
   border: solid 1px #d8d6d6;
   border-radius: 0 !important;
   margin: 25px 0;
-  border-left: 14px solid #004b8d;
+  border-left: 14px solid #004B8D;
   background: #fff !important;
   padding-left: 30px;
 }
@@ -946,7 +936,7 @@ html body .tabs .tab-pane .forms-line-2 .form-control {
   border: solid 1px #d8d6d6;
   border-radius: 0 !important;
   margin: 25px 0;
-  border-left: 14px solid #004b8d;
+  border-left: 14px solid #004B8D;
   background: #fff !important;
   padding-left: 30px;
 }
@@ -967,7 +957,7 @@ html body .route-traffic .container {
 }
 html body .route-traffic .container h1 {
   font-family: Raleway-bold;
-  color: #004b8d;
+  color: #004B8D;
   font-size: 45px;
 }
 html body .route-traffic .container .tag-recent {
@@ -990,7 +980,7 @@ html body .route-traffic .container .tag-recent ul li {
 html body .route-traffic .container .tag-recent ul li span {
   font-size: 14px;
   color: white;
-  background: #e67d22;
+  background: #E67D22;
   padding: 3px 10px;
   margin-left: 0x;
 }
@@ -1003,7 +993,7 @@ html body .route-traffic .container .item-result h3 {
 }
 html body .route-traffic .container .item-result h5 {
   font-family: Raleway-Light;
-  color: #a8a8a8;
+  color: #A8A8A8;
   font-size: 20px;
 }
 html body .route-traffic .container .map-result {
@@ -1048,97 +1038,29 @@ html body .route-traffic .container .routes .selects-lines .control-indicator {
   background: #fff;
   border: solid 1px #d8d6d6;
 }
-html
-  body
-  .route-traffic
-  .container
-  .routes
-  .selects-lines
-  .control-radio
-  .control-indicator {
+html body .route-traffic .container .routes .selects-lines .control-radio .control-indicator {
   border-radius: 50%;
 }
-html
-  body
-  .route-traffic
-  .container
-  .routes
-  .selects-lines
-  .control:hover
-  input
-  ~ .control-indicator,
-html
-  body
-  .route-traffic
-  .container
-  .routes
-  .selects-lines
-  .control
-  input:focus
-  ~ .control-indicator {
+html body .route-traffic .container .routes .selects-lines .control:hover input ~ .control-indicator,
+html body .route-traffic .container .routes .selects-lines .control input:focus ~ .control-indicator {
   background: #fff;
 }
-html
-  body
-  .route-traffic
-  .container
-  .routes
-  .selects-lines
-  .control
-  input:checked
-  ~ .control-indicator {
-  background: #004b8d;
+html body .route-traffic .container .routes .selects-lines .control input:checked ~ .control-indicator {
+  background: #004B8D;
 }
-html
-  body
-  .route-traffic
-  .container
-  .routes
-  .selects-lines
-  .control:hover
-  input:not([disabled]):checked
-  ~ .control-indicator,
-html
-  body
-  .route-traffic
-  .container
-  .routes
-  .selects-lines
-  .control
-  input:checked:focus
-  ~ .control-indicator {
-  background: #004b8d;
+html body .route-traffic .container .routes .selects-lines .control:hover input:not([disabled]):checked ~ .control-indicator,
+html body .route-traffic .container .routes .selects-lines .control input:checked:focus ~ .control-indicator {
+  background: #004B8D;
 }
-html
-  body
-  .route-traffic
-  .container
-  .routes
-  .selects-lines
-  .control-indicator:after {
+html body .route-traffic .container .routes .selects-lines .control-indicator:after {
   content: "";
   position: absolute;
   display: none;
 }
-html
-  body
-  .route-traffic
-  .container
-  .routes
-  .selects-lines
-  .control
-  input:checked
-  ~ .control-indicator:after {
+html body .route-traffic .container .routes .selects-lines .control input:checked ~ .control-indicator:after {
   display: block;
 }
-html
-  body
-  .route-traffic
-  .container
-  .routes
-  .selects-lines
-  .checkbox-label
-  .control-indicator:after {
+html body .route-traffic .container .routes .selects-lines .checkbox-label .control-indicator:after {
   left: 9px;
   top: 4px;
   width: 9px;
@@ -1152,7 +1074,7 @@ html body .route-traffic .container .routes .selects-lines label {
   font-size: 20px;
 }
 html body .route-traffic .container .routes .selects-lines .btn {
-  background: #06c37a;
+  background: #06C37A;
   width: 80%;
 }
 html body .route-traffic .container .routes .selects-lines .btn:hover {
@@ -1165,7 +1087,7 @@ html body .route-traffic .container .routes .btn-excell {
   min-width: 158px;
   min-height: 37px;
   padding: 10px 34px;
-  background: #004b8d;
+  background: #004B8D;
   color: white;
   font-size: 18px;
 }
@@ -1173,7 +1095,7 @@ html body .route-traffic .container .routes .btn-search {
   min-width: 158px;
   min-height: 37px;
   padding: 10px 34px;
-  background: #004b8d;
+  background: #004B8D;
   color: white;
   font-size: 18px;
   transition: 0.2s;
@@ -1222,14 +1144,14 @@ html body .route-traffic .container .routes .table tbody tr .escalas {
   max-width: 170px;
 }
 html body .route-traffic .container .routes .table tbody tr th {
-  border-left: solid 10px #06c37a !important;
+  border-left: solid 10px #06C37A !important;
 }
 html body .route-traffic .container .routes .table tbody tr th .title {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
 }
 html body .route-traffic .container .routes .table tbody tr:hover {
-  background: #004b8d !important;
+  background: #004B8D !important;
   color: white !important;
   -webkit-box-shadow: 0px 25px 21px -6px #858585;
   -moz-box-shadow: 0px 25px 21px -6px #858585;
@@ -1244,32 +1166,17 @@ html body .route-traffic .container .routes .table .btn {
   min-height: 37px;
   border-radius: 50px;
   padding: 10px 34px;
-  background: #06c37a;
+  background: #06C37A;
   border: none;
   font-size: 18px;
   -webkit-box-shadow: 3px 4px 39px -16px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 3px 4px 39px -16px rgba(0, 0, 0, 0.75);
   box-shadow: 3px 4px 39px -16px rgba(0, 0, 0, 0.75);
 }
-html
-  body
-  .route-traffic
-  .container
-  .routes
-  .table-striped
-  tbody
-  tr:nth-of-type(odd) {
+html body .route-traffic .container .routes .table-striped tbody tr:nth-of-type(odd) {
   background-color: rgba(0, 0, 0, 0.05);
 }
-html
-  body
-  .route-traffic
-  .container
-  .routes
-  .table-striped
-  tbody
-  tr:nth-of-type(odd)
-  th {
+html body .route-traffic .container .routes .table-striped tbody tr:nth-of-type(odd) th {
   border-left: none !important;
 }
 html body .agentes {
@@ -1309,7 +1216,7 @@ html body .agentes ul li {
 }
 @media screen and (max-width: 480px) {
   html body .agentes ul li img,
-  html body .agentes ul li span {
+html body .agentes ul li span {
     display: none;
   }
 }
@@ -1331,7 +1238,7 @@ html body .agentes ul li a::after {
   display: block;
   width: 0;
   height: 3px;
-  background: #06c37a;
+  background: #06C37A;
   transition: width 0.3s;
   margin-top: 20px;
 }
@@ -1345,7 +1252,7 @@ html body .agentes ul li a::after {
 }
 html body .agentes ul li span {
   font-size: 13px;
-  color: #a8a8a8;
+  color: #A8A8A8;
 }
 html body .agentes ul li .active {
   background: transparent !important;
@@ -1359,7 +1266,7 @@ html body .agentes .tab-content {
 }
 html body .agentes .tab-content .title h1 {
   font-family: Raleway-bold;
-  color: #004b8d;
+  color: #004B8D;
 }
 @media screen and (max-width: 480px) {
   html body .agentes .tab-content .title h1 {
@@ -1393,7 +1300,7 @@ html body .agentes .tab-content .item-card .header-card img {
 }
 html body .agentes .tab-content .item-card .header-card h3 {
   font-size: 20px;
-  color: #ed1c24;
+  color: #ED1C24;
   font-family: Raleway-bold;
   max-width: 200px;
   margin-left: 20px;
@@ -1403,11 +1310,11 @@ html body .agentes .tab-content .item-card .text-card {
 }
 html body .agentes .tab-content .item-card .text-card .btn {
   background: transparent;
-  color: #004b8d;
+  color: #004B8D;
   border-radius: 0 !important;
 }
 html body .agentes .tab-content .item-card .text-card .btn:hover {
-  background: #004b8d;
+  background: #004B8D;
   color: white;
 }
 html body .agentes .tab-content .item-card .contact-card {
@@ -1465,7 +1372,7 @@ html body .boucer .all-items .boucher-route .footer {
 }
 @media screen and (max-width: 768px) {
   html body .boucer .all-items .boucher-route .head,
-  html body .boucer .all-items .boucher-route .footer {
+html body .boucer .all-items .boucher-route .footer {
     display: flex;
     flex-direction: column;
     flex-flow: column;
@@ -1473,7 +1380,7 @@ html body .boucer .all-items .boucher-route .footer {
   }
 }
 html body .boucer .all-items .boucher-route .head {
-  background-color: #004b8d;
+  background-color: #004B8D;
   color: #fff;
   text-align: left;
 }
@@ -1482,7 +1389,7 @@ html body .boucer .all-items .boucher-route .head .items {
   flex-direction: column;
   flex-flow: column;
   flex: 1 1 auto;
-  border-right: 1px solid #a8a8a8;
+  border-right: 1px solid #A8A8A8;
   padding: 10px;
   margin-right: 15px;
 }
@@ -1522,7 +1429,7 @@ html body .boucer .all-items .boucher-route .footer .items {
   margin-right: 20px;
   align-content: center;
   text-align: left;
-  border-right: 1px solid #a8a8a8;
+  border-right: 1px solid #A8A8A8;
 }
 html body .boucer .all-items .boucher-route .footer .items:last-child {
   border-right: none;
@@ -1536,12 +1443,12 @@ html body .boucer .all-items .boucher-route .footer .items:last-child {
 }
 html body .boucer .all-items .boucher-route .footer h5 {
   font-family: Raleway-med;
-  color: #004b8d;
+  color: #004B8D;
   font-size: 18px;
 }
 html body .boucer .all-items .boucher-route .footer h1 {
   font-family: Raleway-med;
-  color: #ed1c24;
+  color: #ED1C24;
   font-size: 35px;
 }
 @media screen and (max-width: 1300px) {
@@ -1567,7 +1474,7 @@ html body .modal .item-card .header-card img {
 }
 html body .modal .item-card .header-card h3 {
   font-size: 20px;
-  color: #ed1c24;
+  color: #ED1C24;
   font-family: Raleway-bold;
   max-width: 200px;
   margin-left: 20px;
