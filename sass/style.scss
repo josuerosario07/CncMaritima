@@ -908,7 +908,7 @@ html {
             color: white;
             font-size: 18px;
           }
-          .btn-search{
+          .btn-search {
             min-width: 158px;
             min-height: 37px;
             padding: 10px 34px;
@@ -916,11 +916,11 @@ html {
             color: white;
             font-size: 18px;
             transition: 0.2s;
-            &:hover{
+            &:hover {
               transform: scale(1.1);
             }
           }
-          .not-found{
+          .not-found {
             font-size: 55px;
             font-family: $mbold;
             color: black;
