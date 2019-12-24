@@ -483,10 +483,12 @@ html body .docs-info .content p {
   font-size: 27px;
   margin-top: 7px;
   height: 90px;
+  text-align: center;
 }
 @media screen and (min-width: 1400px) {
   html body .docs-info .content p {
     margin-top: 90px;
+    text-align: center;
   }
 }
 html body .docs-info .content .btn {

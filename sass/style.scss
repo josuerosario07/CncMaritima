@@ -391,8 +391,10 @@ html {
           font-size: 27px;
           margin-top: 7px;
           height: 90px;
+          text-align: center;
           @media screen and (min-width: 1400px) {
             margin-top: 90px;
+            text-align: center;
           }
         }
         .btn {
