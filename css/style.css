@@ -190,7 +190,7 @@ html body header .cabecera-img {
   z-index: 0;
 }
 html body header .carousel-caption {
-  bottom: 4%;
+  bottom: 10%;
   text-align: left;
 }
 @media screen and (max-width: 991px) {
@@ -205,7 +205,12 @@ html body header .carousel-caption {
 }
 @media screen and (max-width: 480px) {
   html body header .carousel-caption {
-    bottom: 15%;
+    bottom: 10%;
+  }
+}
+@media screen and (max-width: 350px) {
+  html body header .carousel-caption {
+    bottom: 4%;
   }
 }
 html body header .carousel-caption h1 {
@@ -266,6 +271,12 @@ html body header .carousel .carousel-indicators li {
 html body header .carousel .carousel-control-next,
 html body header .carousel .carousel-control-prev {
   z-index: 4;
+}
+@media screen and (max-width: 768px) {
+  html body header .carousel .carousel-control-next,
+html body header .carousel .carousel-control-prev {
+    display: none;
+  }
 }
 html body header .carousel .carousel-inner .carousel-item {
   height: 809px;
@@ -489,6 +500,11 @@ html body .docs-info .content p {
   html body .docs-info .content p {
     margin-top: 90px;
     text-align: center;
+  }
+}
+@media screen and (max-width: 375px) {
+  html body .docs-info .content p {
+    height: 120px !important;
   }
 }
 html body .docs-info .content .btn {
@@ -745,6 +761,7 @@ html body .tabs .nav-pills {
 @media screen and (max-width: 991px) {
   html body .tabs .nav-pills {
     justify-content: space-around;
+    margin-top: 0px;
   }
 }
 @media screen and (max-width: 768px) {

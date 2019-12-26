@@ -121,7 +121,7 @@ html {
         z-index: 0;
       }
       .carousel-caption {
-        bottom: 4%;
+        bottom: 10%;
         text-align: left;
         @media screen and (max-width: 991px) {
           bottom: 13%;
@@ -130,7 +130,10 @@ html {
           bottom: 7%;
         }
         @media screen and (max-width: 480px) {
-          bottom: 15%;
+          bottom: 10%;
+        }
+        @media screen and (max-width: 350px) {
+          bottom: 4%;
         }
         h1 {
           color: $white;
@@ -184,6 +187,9 @@ html {
         .carousel-control-next,
         .carousel-control-prev {
           z-index: 4;
+          @media screen and (max-width: 768px) {
+            display: none;
+          }
         }
         .carousel-inner {
           .carousel-item {
@@ -395,6 +401,9 @@ html {
           @media screen and (min-width: 1400px) {
             margin-top: 90px;
             text-align: center;
+          }
+          @media screen and (max-width: 375px) {
+            height: 120px !important;
           }
         }
         .btn {
@@ -608,6 +617,7 @@ html {
         box-shadow: 2px 13px 25px -13px rgba(122, 122, 122, 1);
         @media screen and (max-width: 991px) {
           justify-content: space-around;
+          margin-top: 0px;
         }
         @media screen and (max-width: 768px) {
           padding-left: 13px;
