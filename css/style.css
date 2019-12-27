@@ -250,6 +250,11 @@ html body header .carousel-caption a img {
     font-size: 14px;
   }
 }
+@media screen and (max-width: 350px) {
+  html body header .carousel-caption a {
+    font-size: 11px;
+  }
+}
 html body header .carousel-caption .logo-banner {
   width: 400px;
   display: block;
